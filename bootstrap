@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Logging function
+log() {
+  echo -e "\033[1;32m[+]\033[0m $1"
+}
+
+# Create authorized keys file
+touch ~/.ssh/authorized_keys
+chmod 644 ~/.ssh/authorized_keys
+
+# Install Homebrew
+if ! command -v brew &> /dev/null; then
+  log "Installing Homebrew"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+else
+  log "Homebrew already installed"
+fi
+
+# Install Homebrew bundle
+log "Installing Homebrew bundle"
+cd $HOME/.dotfiles
+brew bundle
+
+# Clean possible conflicts with symlinks
+rm $HOME/.gitconfig
+
+# Configure symlinks to configs
+log "Symlinking dotfiles with Stow"
+stow -d $HOME/.dotfiles/confs -t $HOME -R git
