@@ -26,6 +26,7 @@ brew 'p7zip'                      # 7zip
 brew 'jq'                         # JSON parser
 brew 'earthly'                    # Earthly
 brew 'lazygit'                    # CLI git client
+brew 'node'                       # NodeJS for Neovim
 #TODO
 #brew 'pinentry-mac'               # GPG pin entry
 #brew 'zsh'                        # ZSH
@@ -34,7 +35,6 @@ brew 'lazygit'                    # CLI git client
 #brew 'fzf'                        # Fuzzy finder
 #brew 'tmux'                       # Virtual screens
 #brew 'python3'                    # Python
-#brew 'node'                       # NodeJS for Neovim
 #brew 'deno'                       # Deno
 #brew 'elixir'                     # Elixir and Erlang
 #cask 'virtualbox'                 # Virtualbox
