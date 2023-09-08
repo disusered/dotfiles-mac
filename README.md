@@ -28,3 +28,9 @@
   # It should match the `signingkey` in `.gitconfig`
   gpg --list-secret-keys --keyid-format LONG
   ```
+
+## TODO
+
+- [ ] 1password + gpg + git over command line
+- [ ] neovim
+- [ ] zsh

@@ -3,12 +3,44 @@ tap 'homebrew/cask-versions'
 tap 'homebrew/cask-fonts'
 
 # TUI
-brew "whalebrew"
-brew 'gnupg'                        # GPG for signing commits
-brew 'git-delta'                    # Git Delta (diffs)
-brew 'stow'                         # Stow for symlinking configs
-brew 'the_silver_searcher'          # Search contents of files or directories
-brew 'neovim', args: ['HEAD']       # Neovim
+brew 'ag'                         # Search in file
+brew 'fd'                         # Simple and fast alternative to find
+brew 'ripgrep'                    # Another search in file
+brew 'telnet'                     # Tool for debugging network connections
+brew 'git'                        # Git
+brew 'git-flow'                   # Git Flow
+brew 'git-lfs'                    # Git LFS
+brew 'git-delta'                  # Git Delta (diffs)
+brew 'neovim', args: ['HEAD']     # Neovim
+brew 'stow'                       # Stow for symlinking configs
+brew 'lua'                        # Lua
+brew 'luarocks'                   # Luarocks
+brew 'gnupg'                      # GPG for signing commits
+brew 'stow'                       # Symlink configs
+brew 'wget'                       # Download files
+brew 'gh'                         # Github CLI
+cask 'docker'                     # Docker for Mac
+brew 'ranger'                     # File manager
+brew 'libpq'                      # Postgres CLI
+brew 'p7zip'                      # 7zip
+brew 'jq'                         # JSON parser
+brew 'earthly'                    # Earthly
+brew 'lazygit'                    # CLI git client
+#TODO
+#brew 'pinentry-mac'               # GPG pin entry
+#brew 'zsh'                        # ZSH
+#brew 'pure'                       # Prompt for ZSH
+#brew 'volta'                      # NodeJS version manager
+#brew 'fzf'                        # Fuzzy finder
+#brew 'tmux'                       # Virtual screens
+#brew 'python3'                    # Python
+#brew 'node'                       # NodeJS for Neovim
+#brew 'deno'                       # Deno
+#brew 'elixir'                     # Elixir and Erlang
+#cask 'virtualbox'                 # Virtualbox
+#brew 'vagrant'                    # Vagrant
+#brew 'terraform'                  # Terraform
+#brew 'pnpm'                       # PNPM
 
 # GUI
 # System
