@@ -22,9 +22,9 @@ log "Installing Homebrew bundle"
 cd $HOME/.dotfiles
 brew bundle
 
-# Clean possible conflicts with symlinks
-rm $HOME/.gitconfig
+# Configure keystrokes for Neovim/VSCode
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
 # Configure symlinks to configs
 log "Symlinking dotfiles with Stow"
-stow -d $HOME/.dotfiles/confs -t $HOME -R git
+stow -d $HOME/.dotfiles/confs -t $HOME -R git neovim
