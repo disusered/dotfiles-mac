@@ -6,6 +6,7 @@ tap 'homebrew/cask-fonts'
 brew 'ag'                         # Search in file
 brew 'fd'                         # Simple and fast alternative to find
 brew 'ripgrep'                    # Another search in file
+brew 'gnu-sed'                    # GNU Sed
 brew 'telnet'                     # Tool for debugging network connections
 brew 'git'                        # Git
 brew 'git-flow'                   # Git Flow
