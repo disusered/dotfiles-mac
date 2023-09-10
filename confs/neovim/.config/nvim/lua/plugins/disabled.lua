@@ -10,6 +10,8 @@ return {
   { "mini.indentscope", enabled = false },
   -- no session management
   { "folke/persistence.nvim", enabled = false },
+  -- no project management
+  { "ahmedkhalf/project.nvim", enabled = false },
   -- don't use search/replace plugin
   { "nvim-pack/nvim-spectre", enabled = false },
   -- don't use mini.surround
