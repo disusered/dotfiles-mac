@@ -12,4 +12,6 @@ return {
   { "folke/persistence.nvim", enabled = false },
   -- don't use search/replace plugin
   { "nvim-pack/nvim-spectre", enabled = false },
+  -- don't use mini.surround
+  { "echasnovski/mini.surround", enabled = false },
 }
