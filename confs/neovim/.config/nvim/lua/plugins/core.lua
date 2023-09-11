@@ -2,12 +2,10 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = function()
-        require("tokyonight").load()
-      end,
+      colorscheme = "catppuccin",
       -- load the default settings
       defaults = {
-        autocmds = true, -- lazyvim.config.autocmds
+        autocmds = false, -- lazyvim.config.autocmds
         keymaps = false, -- lazyvim.config.keymaps
       },
     },
