@@ -29,8 +29,16 @@
   gpg --list-secret-keys --keyid-format LONG
   ```
 
+4. Install iTerm2 theme
+  ```sh
+  # Clone the repo
+  git clone git@github.com:catppuccin/iterm.git /tmp/catppuccin
+  # Open iTerm2 and go to Preferences > Profiles > Colors > Color Presets > Import
+  # Select the `/tmp/catppuccin/colors/catppuccin-{style}.itermcolors` files in the repo
+  ```
+
 ## TODO
 
 - [ ] 1password + gpg + git over command line
-- [ ] neovim
+- [x] neovim
 - [ ] zsh

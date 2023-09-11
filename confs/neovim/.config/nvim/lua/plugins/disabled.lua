@@ -16,4 +16,6 @@ return {
   { "nvim-pack/nvim-spectre", enabled = false },
   -- don't use mini.surround
   { "echasnovski/mini.surround", enabled = false },
+  -- disable tokyonight
+  { "folke/tokyonight.nvim", enabled = false },
 }
