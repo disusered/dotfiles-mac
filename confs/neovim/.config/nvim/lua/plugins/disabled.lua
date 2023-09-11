@@ -18,4 +18,9 @@ return {
   { "echasnovski/mini.surround", enabled = false },
   -- disable tokyonight
   { "folke/tokyonight.nvim", enabled = false },
+  -- disable UI extras
+  { "stevearc/dressing.nvim", enabled = false },
+  { "folke/noice.nvim", enabled = false },
+  { "rcarriga/nvim-notify", enabled = false },
+  { "folke/edgy.nvim", enabled = false },
 }
