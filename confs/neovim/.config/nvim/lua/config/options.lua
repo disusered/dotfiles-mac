@@ -22,3 +22,29 @@ vim.opt.wildignore = vim.o.wildignore .. ".git*,.hg*,.svn*,node_modules/**,"
 
 -- Use absolute line numbers
 vim.opt.relativenumber = false
+
+-- Add alias to common typos for closing and saving windows
+vim.cmd(":command! WQ wq")
+vim.cmd(":command! WQ wq")
+vim.cmd(":command! Wq wq")
+vim.cmd(":command! Wqa wqa")
+vim.cmd(":command! W w")
+vim.cmd(":command! Q q")
+
+-- Start diff with vertical splits
+vim.opt.diffopt = vim.o.diffopt .. ",vertical"
+
+-- Allow panes to be fully collapsed
+vim.o.winminheight = 0
+
+-- Configure line breaks
+vim.opt.linebreak = true
+vim.opt.breakindent = true
+vim.opt.showbreak = " …"
+
+-- Show column at 80 characters
+vim.opt.colorcolumn = "80"
+
+-- Set characters to distinguish tabs and spaces
+vim.opt.list = true
+vim.opt.listchars = "trail:●,tab:⇥ᐧ,extends:▸,precedes:◂"
