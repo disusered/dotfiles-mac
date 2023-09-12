@@ -32,7 +32,7 @@ return {
       {
         -- disable keymap for git status in telescope
         "<leader>gs",
-        nil,
+        false,
       },
     },
     opts = function(_, opts)
