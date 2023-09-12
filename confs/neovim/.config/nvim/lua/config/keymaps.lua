@@ -122,7 +122,5 @@ map("n", "<leader><tab>[", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
 -- my personal keymaps
 map("n", "<leader><enter>", "<cmd>w<CR>", { desc = "Save file", silent = true, noremap = true })
 map("n", "<leader>q", function() require("mini.bufremove").delete(0, false) end, { desc = "Delete the current buffer" })
-map("n", "]t", "<cmd>tabnext<cr>", { desc = "Next tab", noremap = true, silent = true })
-map("n", "[t", "<cmd>tabprev<cr>", { desc = "Previous tab", noremap = true, silent = true })
 map("n", "]q", "<cmd>cnext<cr>", { desc = "Next quickfix", noremap = true, silent = true })
 map("n", "[q", "<cmd>cprev<cr>", { desc = "Previous quickfix", noremap = true, silent = true })
