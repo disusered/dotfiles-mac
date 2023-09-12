@@ -1,4 +1,4 @@
-vim.api.nvim_set_var("fugitive_pty", false)
+#vim.api.nvim_set_var("fugitive_pty", false)
 
 return {
   {
@@ -6,22 +6,22 @@ return {
     keys = {
       {
         "<leader>gs",
-        ":Git<CR>",
+        "<cmd>Git<CR>",
         desc = "Git status",
       },
       {
         "<leader>gw",
-        ":Gwrite<CR>",
+        "<cmd>Gwrite<CR>",
         desc = "Git write current file",
       },
       {
         "<leader>gr",
-        ":Gread<CR>",
+        "<cmd>Gread<CR>",
         desc = "Git read current file",
       },
       {
         "<leader>g",
-        ":Git blame<CR>",
+        "<cmd>Git blame<CR>",
         desc = "Git blame",
       },
     },
