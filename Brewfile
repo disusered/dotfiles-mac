@@ -74,9 +74,7 @@ mas 'Xcode', id: 497799835 		    # Xcode
 
 # Fonts
 cask 'font-hasklig'
-cask 'font-inconsolata'
-cask 'font-hack-nerd-font'
-cask 'font-source-code-pro'
+cask 'font-hasklug-nerd-font'     # Hasklig Nerd Font
 
 # Browsers
 cask 'firefox'
