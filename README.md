@@ -51,16 +51,10 @@
   cat ~/.ssh/id_ed25519.pub | awk '{print $3 " " $1 " " $2}' > ~/.ssh/allowed_signers
   ```
 
-5. Install iTerm2 theme
+5. Install iTerm2 theme and set fonts
   ```sh
   # Clone the repo
   git clone git@github.com:catppuccin/iterm.git /tmp/catppuccin
   # Open iTerm2 and go to Preferences > Profiles > Colors > Color Presets > Import
   # Select the `/tmp/catppuccin/colors/catppuccin-{style}.itermcolors` files in the repo
   ```
-
-## TODO
-
-- [ ] 1password + gpg + git over command line
-- [x] neovim
-- [ ] zsh
