@@ -28,13 +28,14 @@ brew 'jq'                         # JSON parser
 brew 'earthly'                    # Earthly
 brew 'lazygit'                    # CLI git client
 brew 'node'                       # NodeJS for Neovim
+brew 'tmux'                       # Virtual screens
+brew 'tpm'                        # Tmux Plugin Manager
+
 #TODO
-#brew 'pinentry-mac'               # GPG pin entry
 #brew 'zsh'                        # ZSH
 #brew 'pure'                       # Prompt for ZSH
 #brew 'volta'                      # NodeJS version manager
 #brew 'fzf'                        # Fuzzy finder
-#brew 'tmux'                       # Virtual screens
 #brew 'python3'                    # Python
 #brew 'deno'                       # Deno
 #brew 'elixir'                     # Elixir and Erlang
