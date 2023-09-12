@@ -4,7 +4,7 @@ GPG_TTY=$(tty)
 KEYBASE_PGP_FINGERPRINT=$(keybase pgp list | grep "PGP Fingerprint" | awk -F ':' '{print $2}' | tr -d '[:space:]')
 KEYBASE_KEY_ID=$(keybase pgp list | grep "Key ID" | awk -F ':' '{print $2}' | tr -d '[:space:]')
 
-if ! gpg --list-secret-keys $KEYBASE_PGP_FINGERPRINT &> /dev/null; then
-  keybase pgp export -q $KEYBASE_KEY_ID | gpg --import
-  keybase pgp export -q $KEYBASE_KEY_ID --secret | gpg --allow-secret-key-import --import
+if ! gpg --list-secret-keys $KEYBASE_PGP_FINGERPRINT &>/dev/null; then
+	keybase pgp export -q $KEYBASE_KEY_ID | gpg --import
+	keybase pgp export -q $KEYBASE_KEY_ID --secret | gpg --allow-secret-key-import --import
 fi
