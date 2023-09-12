@@ -1,7 +1,14 @@
 [user]
 	name = Carlos Rosquillas
 	email = crosquillas@gmail.com
-	signingkey = AAE5C2AEA9340F06
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIItvqustuRafV6uKiFO95jtg4gEzf9/lXwbezYHbzCs7
+[gpg]
+	format = ssh
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+	allowedSignersFile = /Users/carlos/.ssh/allowed_signers
+[commit]
+	gpgsign = true
 [advice]
 	statusHints = true
 [color]
@@ -78,11 +85,6 @@
 	submoduleSummary = true
 [url "git@bitbucket.org:"]
 	insteadOf = https://bitbucket.org/
-[commit]
-	gpgsign = true
-[gpg]
-;	program = /usr/bin/gpg
-	program = /usr/local/bin/gpg
 [init]
 	defaultBranch = main
 [filter "lfs"]

@@ -29,7 +29,29 @@
   gpg --list-secret-keys --keyid-format LONG
   ```
 
-4. Install iTerm2 theme
+4. Configure SSH with 1Password
+  ```sh
+  # https://developer.1password.com/docs/ssh/git-commit-signing/
+
+  # 1) Open 1Password and go to Preferences > Developer > Use the SSH agent
+  # In a terminal, create an SSH config file and copy the contents from 1Password
+  mkdir -p ~/.ssh
+  touch ~/.ssh/config
+  chmod 600 ~/.ssh/config
+
+  # 2) In 1Password, find the SSH key and follow the instructions to configure
+  # "Sign Your Git Commits".
+
+  # 3) Add the SSH key to Github as a signing key
+  # https://github.com/settings/keys
+
+  # 4) Allow local verification of commits with allowedSigners file
+  touch ~/.ssh/allowed_signers
+  git config --global gpg.ssh.allowedSignersFile ~/.ssh/allowed_signers
+  cat ~/.ssh/id_ed25519.pub | awk '{print $3 " " $1 " " $2}' > ~/.ssh/allowed_signers
+  ```
+
+5. Install iTerm2 theme
   ```sh
   # Clone the repo
   git clone git@github.com:catppuccin/iterm.git /tmp/catppuccin
