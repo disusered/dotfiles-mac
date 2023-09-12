@@ -23,4 +23,6 @@ return {
   { "folke/noice.nvim", enabled = false },
   { "rcarriga/nvim-notify", enabled = false },
   { "folke/edgy.nvim", enabled = false },
+  -- disable redundant highlighting
+  { "RRethy/vim-illuminate", enabled = false },
 }
