@@ -25,4 +25,6 @@ return {
   { "folke/edgy.nvim", enabled = false },
   -- disable redundant highlighting
   { "RRethy/vim-illuminate", enabled = false },
+  -- no file explorer
+  { "nvim-neo-tree/neo-tree.nvim", enabled = false },
 }
