@@ -29,6 +29,11 @@ return {
         end,
         desc = "Find in files",
       },
+      {
+        -- disable keymap for git status in telescope
+        "<leader>gs",
+        nil,
+      },
     },
     opts = function(_, opts)
       opts.defaults.mappings = {

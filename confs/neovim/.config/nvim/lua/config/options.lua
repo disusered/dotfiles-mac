@@ -48,3 +48,6 @@ vim.opt.colorcolumn = "80"
 -- Set characters to distinguish tabs and spaces
 vim.opt.list = true
 vim.opt.listchars = "trail:●,tab:⇥ᐧ,extends:▸,precedes:◂"
+
+-- Open splits above, not below
+vim.opt.splitbelow = false
