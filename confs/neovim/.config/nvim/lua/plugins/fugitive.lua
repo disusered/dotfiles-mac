@@ -3,6 +3,8 @@
 return {
   {
     "tpope/vim-fugitive",
+    lazy = true,
+    cmd = { "Git", "Gwrite", "Gread", "G" },
     keys = {
       {
         "<leader>gs",
@@ -20,7 +22,7 @@ return {
         desc = "Git read current file",
       },
       {
-        "<leader>g",
+        "<leader>gb",
         "<cmd>Git blame<CR>",
         desc = "Git blame",
       },
