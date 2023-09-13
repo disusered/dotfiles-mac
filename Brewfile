@@ -30,6 +30,7 @@ brew 'lazygit'                    # CLI git client
 brew 'node'                       # NodeJS for Neovim
 brew 'tmux'                       # Virtual screens
 brew 'tpm'                        # Tmux Plugin Manager
+brew 'elixir'                     # Elixir and Erlang
 
 #TODO
 #brew 'zsh'                        # ZSH
@@ -38,7 +39,6 @@ brew 'tpm'                        # Tmux Plugin Manager
 #brew 'fzf'                        # Fuzzy finder
 #brew 'python3'                    # Python
 #brew 'deno'                       # Deno
-#brew 'elixir'                     # Elixir and Erlang
 #cask 'virtualbox'                 # Virtualbox
 #brew 'vagrant'                    # Vagrant
 #brew 'terraform'                  # Terraform
