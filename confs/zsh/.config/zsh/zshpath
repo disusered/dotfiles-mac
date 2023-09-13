@@ -1,0 +1,20 @@
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  # TODO: Only add to path if the directory exists
+  # Add to $PATH variable
+  path=(
+    $VOLTA_HOME/bin
+    "${XDG_DATA_HOME:-${HOME}/.local}/bin"
+    $(python3 -c 'import site; print(site.USER_BASE)')/bin
+    $HOME/.local/bin
+    $HOME/.docker/bin
+    /usr/local/opt/libpq/bin
+    $FLYCTL_INSTALL/bin
+    $path
+  )
+
+  # Add to ZSH function paths
+  fpath=(
+    "${XDG_DATA_HOME:-${HOME}/.local/share}/zsh/completions"
+    $fpath
+  )
+fi

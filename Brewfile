@@ -31,10 +31,10 @@ brew 'node'                       # NodeJS for Neovim
 brew 'tmux'                       # Virtual screens
 brew 'tpm'                        # Tmux Plugin Manager
 brew 'elixir'                     # Elixir and Erlang
+brew 'zsh'                        # ZSH
+brew 'pure'                       # Prompt for ZSH
 
 #TODO
-#brew 'zsh'                        # ZSH
-#brew 'pure'                       # Prompt for ZSH
 #brew 'volta'                      # NodeJS version manager
 #brew 'fzf'                        # Fuzzy finder
 #brew 'python3'                    # Python
