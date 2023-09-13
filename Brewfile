@@ -33,6 +33,7 @@ brew 'tpm'                        # Tmux Plugin Manager
 brew 'elixir'                     # Elixir and Erlang
 brew 'zsh'                        # ZSH
 brew 'pure'                       # Prompt for ZSH
+brew 'ncdu'                       # Disk usage
 
 #TODO
 #brew 'volta'                      # NodeJS version manager
