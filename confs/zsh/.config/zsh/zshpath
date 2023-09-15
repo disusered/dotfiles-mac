@@ -2,6 +2,9 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   path=(
     # Postgres CLI
     /usr/local/opt/libpq/bin
+    # Node version management
+    $VOLTA_HOME/bin
+    # Inherit PATH
     $path
   )
 
