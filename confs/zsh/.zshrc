@@ -16,6 +16,10 @@ zinit light sindresorhus/pure
 zplugin light zsh-users/zsh-history-substring-search
 zplugin light zdharma/fast-syntax-highlighting
 
+# Better vi mode
+zinit ice depth=1
+zinit light jeffreytse/zsh-vi-mode
+
 # History options
 SAVEHIST=10000
 HISTSIZE=10000
@@ -33,9 +37,6 @@ setopt HIST_BEEP
 
 # Load custom alias
 source $HOME/.config/zsh/zshalias
-
-# Enable vim mode
-bindkey -v
 
 # History substring search with Ctrl-R
 bindkey '^R' history-incremental-search-backward
