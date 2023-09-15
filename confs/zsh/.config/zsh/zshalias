@@ -40,6 +40,7 @@ alias gf='git fetch'
 alias gfm='git pull'
 alias gr='git reset'
 alias gco='git checkout'
+alias gi='lazygit'
 
 # Debug colors in tmux
 alias colors='( x=`tput op` y=`printf %$((${COLUMNS}-6))s`;for i in {0..256};do o=00$i;echo -e ${o:${#o}-3:3} `tput setaf $i;tput setab $i`${y// /=}$x;done; )'

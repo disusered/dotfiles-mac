@@ -27,7 +27,7 @@ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
 # Configure symlinks to configs
 log "Symlinking dotfiles with Stow"
-stow -d $HOME/.dotfiles/confs -t $HOME -R git neovim tmux zsh bat btop ncdu
+stow -d $HOME/.dotfiles/confs -t $HOME -R git neovim tmux zsh bat btop ncdu lazygit
 
 # Set ZSH as default shell if not already set
 if [[ $SHELL != $(which zsh) ]]; then

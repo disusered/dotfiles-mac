@@ -40,5 +40,8 @@ if [[ -d "$HOME/.cargo/bin" ]]; then
   . "$HOME/.cargo/env"
 fi
 
+# Lazygit theme
+export LG_CONFIG_FILE="$HOME/.config/lazygit/config.yml"
+
 # Zinit configuration
 export ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
