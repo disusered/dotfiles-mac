@@ -39,6 +39,7 @@ brew 'flyctl'                     # Fly.io CLI
 brew 'fzf'                        # Fuzzy finder
 brew 'bat'                        # Cat with syntax highlighting
 brew 'httpie'                     # HTTP client
+brew 'btop'                       # Resource monitor
 
 #TODO
 #brew 'volta'                      # NodeJS version manager
