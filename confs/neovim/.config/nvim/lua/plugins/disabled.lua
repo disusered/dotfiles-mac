@@ -8,6 +8,8 @@ return {
   { "ggandor/flit.nvim", enabled = false },
   -- remove animated indent scope
   { "mini.indentscope", enabled = false },
+  -- no automatic pairs
+  { "mini.pairs", enabled = false },
   -- no session management
   { "folke/persistence.nvim", enabled = false },
   -- no project management
