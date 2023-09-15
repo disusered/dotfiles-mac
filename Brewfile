@@ -34,6 +34,8 @@ brew 'elixir'                     # Elixir and Erlang
 brew 'zsh'                        # ZSH
 brew 'pure'                       # Prompt for ZSH
 brew 'ncdu'                       # Disk usage
+brew 'prettier'                   # Prettier
+brew 'flyctl'                     # Fly.io CLI
 
 #TODO
 #brew 'volta'                      # NodeJS version manager
