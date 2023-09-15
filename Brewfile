@@ -41,10 +41,10 @@ brew 'bat'                        # Cat with syntax highlighting
 brew 'httpie'                     # HTTP client
 brew 'btop'                       # Resource monitor
 brew 'volta'                      # NodeJS version manager
+brew 'deno'                       # Deno
 
 #TODO
 #brew 'python3'                    # Python
-#brew 'deno'                       # Deno
 #cask 'virtualbox'                 # Virtualbox
 #brew 'vagrant'                    # Vagrant
 #brew 'terraform'                  # Terraform
