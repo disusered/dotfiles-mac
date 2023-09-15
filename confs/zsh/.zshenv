@@ -41,14 +41,5 @@ if [[ -d "$HOME/.cargo/bin" ]]; then
   . "$HOME/.cargo/env"
 fi
 
-# TODO: Evaluate
-# FlyCTL for Fly.io
-# export FLYCTL_INSTALL="$HOME/.fly"
-
-# TODO: Evaluate
-# GPG
-# GPG_TTY=$(tty)
-# export GPG_TTY
-
 # Zinit configuration
 export ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
