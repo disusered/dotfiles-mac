@@ -1,0 +1,5 @@
+# Always enable extended mode
+-e
+
+# Disable color scheme
+--color off
