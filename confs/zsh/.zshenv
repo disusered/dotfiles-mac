@@ -17,12 +17,6 @@ export VISUAL='nvim'
 export PAGER='less'
 
 # TODO: Colors
-# Configure options for less
-# export LESSPIPE=`which src-hilite-lesspipe.sh`
-# export LESSOPEN="| ${LESSPIPE} %s"
-# export LESS='-X -F -g -i -M -R -S -w -z-4'
-
-# TODO: Colors
 # Set Git options
 # export GIT_LOG_STYLE_BASIC="%C(magenta bold)%h%C(reset) %C(auto)%d%C(reset) %s"
 # export GIT_LOG_STYLE_COMPLEX="%C(magenta bold)%h%C(reset) %C(blue bold)%aN%C(reset) %C(auto)%d%C(reset) %s %C(8)(%cr)%C(reset)"
