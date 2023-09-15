@@ -56,6 +56,7 @@ return {
           ["<c-h>"] = "which_key",
           ["<c-q>"] = actions.smart_send_to_qflist + actions.open_qflist,
           ["<c-t"] = actions.select_tab,
+          ["<c-p>"] = nil,
           ["<a-i>"] = function()
             local action_state = require("telescope.actions.state")
             local line = action_state.get_current_line()
