@@ -35,3 +35,9 @@ if [[ $SHELL != $(which zsh) ]]; then
 	chsh -s $(which zsh)
 	fast-theme ~/.config/fsh/catppuccin-mocha
 fi
+
+# Configure FZF if not already configured in shell i.e. if ~/.fzf.zsh does not exist
+if [[ ! -f ~/.fzf.zsh ]]; then
+	log "Installing FZF shell utilities"
+	$(brew --prefix)/opt/fzf/install --all --no-bash --no-fish
+fi

@@ -36,10 +36,10 @@ brew 'pure'                       # Prompt for ZSH
 brew 'ncdu'                       # Disk usage
 brew 'prettier'                   # Prettier
 brew 'flyctl'                     # Fly.io CLI
+brew 'fzf'                        # Fuzzy finder
 
 #TODO
 #brew 'volta'                      # NodeJS version manager
-#brew 'fzf'                        # Fuzzy finder
 #brew 'python3'                    # Python
 #brew 'deno'                       # Deno
 #cask 'virtualbox'                 # Virtualbox
