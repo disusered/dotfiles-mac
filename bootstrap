@@ -27,7 +27,7 @@ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
 # Configure symlinks to configs
 log "Symlinking dotfiles with Stow"
-stow -d $HOME/.dotfiles/confs -t $HOME -R git neovim tmux zsh
+stow -d $HOME/.dotfiles/confs -t $HOME -R git neovim tmux zsh bat
 
 # Set ZSH as default shell if not already set
 if [[ $SHELL != $(which zsh) ]]; then
@@ -41,3 +41,6 @@ if [[ ! -f ~/.fzf.zsh ]]; then
 	log "Installing FZF shell utilities"
 	$(brew --prefix)/opt/fzf/install --all --no-bash --no-fish
 fi
+
+# Build Bat theme cache
+bat cache --build

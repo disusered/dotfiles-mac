@@ -37,6 +37,7 @@ brew 'ncdu'                       # Disk usage
 brew 'prettier'                   # Prettier
 brew 'flyctl'                     # Fly.io CLI
 brew 'fzf'                        # Fuzzy finder
+brew 'bat'                        # Cat with syntax highlighting
 
 #TODO
 #brew 'volta'                      # NodeJS version manager

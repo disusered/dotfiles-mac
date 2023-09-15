@@ -1,6 +1,9 @@
 # Disable globbing with git
 alias git='noglob git'
 
+# Replace cat with bat
+alias cat='bat'
+
 # Tmux attach alias
 alias ta='tmux attach -t'
 
