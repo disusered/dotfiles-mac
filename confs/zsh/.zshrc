@@ -47,10 +47,9 @@ bindkey '^[[B' history-substring-search-down
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
-# TODO: See if needed
 # Delete key
-# bindkey '^[[3~' delete-char
-# bindkey -M vicmd '^[[3~' delete-char
+bindkey '^[[3~' delete-char
+bindkey -M vicmd '^[[3~' delete-char
 
 # Undo/Redo
 bindkey -M vicmd 'u' undo
