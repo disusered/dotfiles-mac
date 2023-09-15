@@ -16,11 +16,10 @@ export EDITOR='nvim'
 export VISUAL='nvim'
 export PAGER='less'
 
-# TODO: Colors
 # Set Git options
-# export GIT_LOG_STYLE_BASIC="%C(magenta bold)%h%C(reset) %C(auto)%d%C(reset) %s"
-# export GIT_LOG_STYLE_COMPLEX="%C(magenta bold)%h%C(reset) %C(blue bold)%aN%C(reset) %C(auto)%d%C(reset) %s %C(8)(%cr)%C(reset)"
-# export GIT_LOG_STYLE=$GIT_LOG_STYLE_COMPLEX
+export GIT_LOG_STYLE_BASIC="%C(magenta bold)%h%C(reset) %C(auto)%d%C(reset) %s"
+export GIT_LOG_STYLE_COMPLEX="%C(magenta bold)%h%C(reset) %C(blue bold)%aN%C(reset) %C(auto)%d%C(reset) %s %C(8)(%cr)%C(reset)"
+export GIT_LOG_STYLE=$GIT_LOG_STYLE_COMPLEX
 
 # Default FZF options
 # Colors from https://github.com/catppuccin/fzf
