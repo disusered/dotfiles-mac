@@ -2,11 +2,30 @@ local actions = require("telescope.actions")
 local Util = require("lazyvim.util")
 
 return {
+  { "debugloop/telescope-undo.nvim" },
   {
     "nvim-telescope/telescope.nvim",
+    config = function()
+      require("telescope").setup({
+        extensions = {
+          undo = {
+            -- telescope-undo.nvim config, see below
+          },
+        },
+      })
+      require("telescope").load_extension("undo")
+    end,
     keys = {
       {
-        -- keymap to browse plugin files
+        -- keymap to browse undo history
+        "<leader>su",
+        function()
+          require("telescope").extensions.undo.undo()
+        end,
+        desc = "Find file",
+      },
+      {
+        -- keymap to browse files
         "<leader>p",
         function()
           require("telescope.builtin").find_files({ find_command = { "rg", "--files", "--hidden", "-g", "!.git" } })
