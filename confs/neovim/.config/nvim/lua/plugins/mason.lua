@@ -8,6 +8,7 @@ return {
         "css-lsp",
         "html-lsp",
         "vue-language-server",
+        "eslint-lsp",
         "prettierd",
       },
     },
