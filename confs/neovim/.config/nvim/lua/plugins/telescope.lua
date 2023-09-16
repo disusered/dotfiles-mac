@@ -4,22 +4,13 @@ local Util = require("lazyvim.util")
 return {
   {
     "nvim-telescope/telescope.nvim",
-    dependencies = { "debugloop/telescope-undo.nvim" },
-    config = function()
-      require("telescope").setup({
-        extensions = {
-          undo = {
-            use_delta = false,
-            side_by_side = false,
-            mappings = {
-              i = {
-                ["<cr>"] = require("telescope-undo.actions").restore,
-              },
-            },
-          },
-        },
-      })
-      require("telescope").load_extension("undo")
+    dependencies = {
+      "debugloop/telescope-undo.nvim",
+    },
+    config = function(_, opts)
+      local telescope = require("telescope")
+      telescope.setup(opts)
+      telescope.load_extension("undo")
     end,
     keys = {
       {
@@ -28,7 +19,7 @@ return {
         function()
           require("telescope").extensions.undo.undo()
         end,
-        desc = "Find file",
+        desc = "Undo history",
       },
       {
         -- keymap to browse files
@@ -61,6 +52,18 @@ return {
       },
     },
     opts = function(_, opts)
+      opts.extensions = {
+        undo = {
+          use_delta = false,
+          side_by_side = false,
+          mappings = {
+            i = {
+              ["<cr>"] = require("telescope-undo.actions").restore,
+            },
+          },
+        },
+      }
+
       opts.defaults.vimgrep_arguments = {
         "rg",
         "--color=never",
