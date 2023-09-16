@@ -6,8 +6,8 @@ return {
   -- disable visual aids on fFtT and /
   { "folke/flash.nvim", enabled = false },
   { "ggandor/flit.nvim", enabled = false },
-  -- remove animated indent scope
-  { "mini.indentscope", enabled = false },
+  -- remove excessive indent cues
+  { "lukas-reineke/indent-blankline.nvim", enabled = false },
   -- no automatic pairs
   { "mini.pairs", enabled = false },
   -- no session management
@@ -21,9 +21,9 @@ return {
   -- disable tokyonight
   { "folke/tokyonight.nvim", enabled = false },
   -- disable UI extras
-  { "stevearc/dressing.nvim", enabled = false },
+  -- { "stevearc/dressing.nvim", enabled = false },
+  -- { "rcarriga/nvim-notify", enabled = false },
   { "folke/noice.nvim", enabled = false },
-  { "rcarriga/nvim-notify", enabled = false },
   { "folke/edgy.nvim", enabled = false },
   -- disable redundant highlighting
   { "RRethy/vim-illuminate", enabled = false },
