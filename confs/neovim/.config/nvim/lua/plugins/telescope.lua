@@ -2,14 +2,20 @@ local actions = require("telescope.actions")
 local Util = require("lazyvim.util")
 
 return {
-  { "debugloop/telescope-undo.nvim" },
   {
     "nvim-telescope/telescope.nvim",
+    dependencies = { "debugloop/telescope-undo.nvim" },
     config = function()
       require("telescope").setup({
         extensions = {
           undo = {
-            -- telescope-undo.nvim config, see below
+            use_delta = false,
+            side_by_side = false,
+            mappings = {
+              i = {
+                ["<cr>"] = require("telescope-undo.actions").restore,
+              },
+            },
           },
         },
       })
