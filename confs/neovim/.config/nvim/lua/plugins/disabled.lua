@@ -21,8 +21,8 @@ return {
   -- disable tokyonight
   { "folke/tokyonight.nvim", enabled = false },
   -- disable UI extras
-  -- { "stevearc/dressing.nvim", enabled = false },
-  -- { "rcarriga/nvim-notify", enabled = false },
+  { "stevearc/dressing.nvim", enabled = false },
+  { "rcarriga/nvim-notify", enabled = false },
   { "folke/noice.nvim", enabled = false },
   { "folke/edgy.nvim", enabled = false },
   -- disable redundant highlighting
