@@ -78,7 +78,7 @@ mas 'Xcode', id: 497799835            # Xcode
 
 # Fonts
 cask 'font-hasklig'
-cask 'font-hasklug-nerd-font'     # Hasklig Nerd Font
+cask 'font-symbols-only-nerd-font'
 
 # Browsers
 cask 'firefox'
