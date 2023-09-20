@@ -42,6 +42,7 @@ brew 'httpie'                     # HTTP client
 brew 'btop'                       # Resource monitor
 brew 'volta'                      # NodeJS version manager
 brew 'deno'                       # Deno
+brew 'amfora'                     # Gemini browser
 
 #TODO
 #brew 'python3'                    # Python
