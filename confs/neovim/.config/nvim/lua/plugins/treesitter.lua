@@ -13,6 +13,7 @@ return {
         "toml",
         "vue",
         "yaml",
+        "astro",
       })
     end,
   },

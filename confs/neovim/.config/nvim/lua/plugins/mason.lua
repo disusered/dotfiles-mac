@@ -10,6 +10,7 @@ return {
         "vue-language-server",
         "eslint-lsp",
         "prettierd",
+        "astro-language-server",
       },
     },
   },
