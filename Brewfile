@@ -75,6 +75,7 @@ cask 'imageoptim'                     # Optimize images
 cask 'rapidapi'                       # REST client
 cask 'visual-studio-code'             # Text editor
 cask 'poedit'                         # l10n
+cask 'love'                           # LÖVE
 mas 'Xcode', id: 497799835            # Xcode
 
 # Fonts
