@@ -19,6 +19,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.tailwind" },
     { import = "lazyvim.plugins.extras.coding.yanky" },
     { import = "lazyvim.plugins.extras.test.core" },
+    { import = "lazyvim.plugins.extras.editor.aerial" },
     -- doesn't work with eslint-plugin-prettier
     { import = "lazyvim.plugins.extras.linting.eslint" },
     { import = "lazyvim.plugins.extras.formatting.prettier" },
