@@ -91,3 +91,21 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
     vim.fn.mkdir(vim.fn.fnamemodify(file, ":p:h"), "p")
   end,
 })
+
+vim.api.nvim_create_autocmd("FileType", {
+  group = augroup("no_auto_comment"),
+  pattern = { "*" },
+  callback = function()
+    -- Set text formatting options
+    --                    + 'j'    -- join comments smartly
+    --                    + 'n'    -- autoformat numbered list
+    --                    + 'c'    -- auto-wrap comments using textwidth
+    --                    + 'q'    -- format comments with gq
+    --                    + 'l'    -- only break a line if it was not longer than 'textwidth' when the insert started
+    --                    - 'o'    -- don't insert comment leader on pressing o
+    --                    - 't'    -- auto-wrap text using textwidth
+    --                    - 'r'    -- auto insert comment leader on pressing enter
+    --                    - 'a'    -- don't autoformat the paragraphs (use some formatter instead)
+    vim.cmd("setlocal formatoptions-=cro")
+  end,
+})
