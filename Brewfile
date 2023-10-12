@@ -43,6 +43,7 @@ brew 'btop'                       # Resource monitor
 brew 'volta'                      # NodeJS version manager
 brew 'deno'                       # Deno
 brew 'amfora'                     # Gemini browser
+brew 'tree'                       # Tree view for directories
 
 #TODO
 #brew 'python3'                    # Python
@@ -76,6 +77,7 @@ cask 'rapidapi'                       # REST client
 cask 'visual-studio-code'             # Text editor
 cask 'poedit'                         # l10n
 cask 'love'                           # LÖVE
+cask 'bfxr'                           # Sound effects
 mas 'Xcode', id: 497799835            # Xcode
 
 # Fonts
