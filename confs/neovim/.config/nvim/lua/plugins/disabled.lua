@@ -2,7 +2,7 @@ return {
   -- disable bufferline
   { "akinsho/bufferline.nvim", enabled = false },
   -- disable fancy start screen
-  { "glepnir/dashboard-nvim", enabled = false },
+  { "nvimdev/dashboard-nvim", enabled = false },
   -- disable visual aids on fFtT and /
   { "folke/flash.nvim", enabled = false },
   { "ggandor/flit.nvim", enabled = false },
