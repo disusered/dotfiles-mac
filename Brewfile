@@ -1,6 +1,7 @@
 # Tap into more sources
 tap 'homebrew/cask-versions'
 tap 'homebrew/cask-fonts'
+tap 'heroku/brew'
 
 # TUI
 brew 'ag'                         # Search in file
@@ -44,6 +45,7 @@ brew 'volta'                      # NodeJS version manager
 brew 'deno'                       # Deno
 brew 'amfora'                     # Gemini browser
 brew 'tree'                       # Tree view for directories
+brew 'heroku'                     # Heroku CLI
 
 #TODO
 #brew 'python3'                    # Python
