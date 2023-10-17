@@ -1,5 +1,5 @@
 # ZSH environment variable for temporary files
-export TMPDIR="/tmp/$USER"
+export TMPDIR="/tmp"
 
 # Locale settings
 export LANG='en_US.UTF-8'
