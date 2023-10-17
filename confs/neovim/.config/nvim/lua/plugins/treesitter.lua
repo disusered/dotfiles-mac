@@ -14,6 +14,7 @@ return {
         "vue",
         "yaml",
         "astro",
+        "sql",
       })
     end,
   },
