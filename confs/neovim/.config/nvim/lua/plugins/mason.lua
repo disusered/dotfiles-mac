@@ -11,6 +11,7 @@ return {
         "eslint-lsp",
         "prettierd",
         "astro-language-server",
+        "sqlfluff",
       },
     },
   },
