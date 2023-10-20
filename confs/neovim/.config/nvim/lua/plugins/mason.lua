@@ -12,6 +12,7 @@ return {
         "prettierd",
         "astro-language-server",
         "sqlfluff",
+        "elixir-ls",
       },
     },
   },
