@@ -15,6 +15,7 @@ return {
         "yaml",
         "astro",
         "sql",
+        "rust",
       })
     end,
   },
