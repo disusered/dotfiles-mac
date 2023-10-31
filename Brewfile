@@ -57,7 +57,7 @@ brew 'rustup'                     # Rust
 
 # GUI
 # System
-cask 'onyx'                         # System cleaning and tweaks
+#cask 'onyx'                         # System cleaning and tweaks
 cask 'appcleaner'                   # Allows fully removing old software
 mas 'Things', id: 904280696         # To-do lists
 mas 'The Unarchiver', id: 425424353 # Handle more compressed file formats
