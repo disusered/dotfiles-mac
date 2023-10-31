@@ -67,6 +67,7 @@ cask '1password-cli'                # 1Password integration with CLI
 cask 'transmission'                 # Torrent client
 cask 'barrier'                      # Synergy fork
 cask 'docker'                       # Docker Desktop
+cask 'karabiner-elements'           # Keyboard remapping
 
 # Development
 cask 'iterm2'                         # Terminal
