@@ -17,6 +17,10 @@ return {
         },
       },
       formatters_by_ft = {
+        -- elixir formatting
+        heex = { "mix" },
+        elixir = { "mix" },
+        -- sql formatting
         sql = {
           "sqlfluff",
         },
