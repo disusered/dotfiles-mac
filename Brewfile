@@ -47,6 +47,7 @@ brew 'amfora'                     # Gemini browser
 brew 'tree'                       # Tree view for directories
 brew 'heroku'                     # Heroku CLI
 brew 'rustup'                     # Rust
+brew 'awscli'                     # AWS CLI
 
 #TODO
 #brew 'python3'                    # Python
