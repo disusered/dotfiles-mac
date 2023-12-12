@@ -14,6 +14,7 @@ brew 'git-flow'                   # Git Flow
 brew 'git-lfs'                    # Git LFS
 brew 'git-delta'                  # Git Delta (diffs)
 brew 'neovim', args: ['HEAD']     # Neovim
+brew 'neovim-remote'              # Neovim remote
 brew 'stow'                       # Stow for symlinking configs
 brew 'lua'                        # Lua
 brew 'luarocks'                   # Luarocks
@@ -48,6 +49,8 @@ brew 'tree'                       # Tree view for directories
 brew 'heroku'                     # Heroku CLI
 brew 'rustup'                     # Rust
 brew 'awscli'                     # AWS CLI
+brew 'mono'                       # Mono
+brew 'dotnet'                     # .NET
 
 #TODO
 #brew 'python3'                    # Python

@@ -13,6 +13,7 @@ return {
         "astro-language-server",
         "sqlfluff",
         "elixir-ls",
+        "omnisharp",
       },
     },
   },

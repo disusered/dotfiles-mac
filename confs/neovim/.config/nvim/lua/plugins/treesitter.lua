@@ -16,6 +16,7 @@ return {
         "astro",
         "sql",
         "rust",
+        "c_sharp",
       })
     end,
   },
