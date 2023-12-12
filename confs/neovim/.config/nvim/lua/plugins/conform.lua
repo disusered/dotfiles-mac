@@ -1,15 +1,9 @@
+local Util = require("lazyvim.util")
+
 return {
   {
     "stevearc/conform.nvim",
     opts = function()
-      local plugin = require("lazy.core.config").plugins["conform.nvim"]
-      if plugin.config ~= M.setup then
-        require("lazyvim.util").error({
-          "Don't set `plugin.config` for `conform.nvim`.\n",
-          "This will break **LazyVim** formatting.\n",
-          "Please refer to the docs at https://www.lazyvim.org/plugins/formatting",
-        }, { title = "LazyVim" })
-      end
       ---@class ConformOpts
       local opts = {
         -- LazyVim will use these options when formatting with the conform.nvim formatter
@@ -17,23 +11,11 @@ return {
           timeout_ms = 3000,
           async = false, -- not recommended to change
           quiet = false, -- not recommended to change
-          -- lsp_fallback = true,
         },
         ---@type table<string, conform.FormatterUnit[]>
         formatters_by_ft = {
-          -- elixir formatting
-          heex = { "mix" },
-          elixir = { "mix" },
           -- sql formatting
-          sql = {
-            "sqlfluff",
-          },
-          ["*"] = {
-            "trim_whitespace",
-            "trim_newlines",
-            "squeeze_blanks",
-            -- "injected",
-          },
+          sql = { "sqlfluff" },
         },
         -- The options you set here will be merged with the builtin formatters.
         -- You can also define any custom formatters here.
@@ -54,6 +36,6 @@ return {
         },
       }
       return opts
-    end,
+    end
   },
 }

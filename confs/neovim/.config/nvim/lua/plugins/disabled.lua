@@ -23,12 +23,10 @@ return {
   -- disable UI extras
   { "stevearc/dressing.nvim",              enabled = true },
   { "rcarriga/nvim-notify",                enabled = true },
-  { "folke/noice.nvim",                    enabled = false },
+  { "folke/noice.nvim",                    enabled = true },
   { "folke/edgy.nvim",                     enabled = false },
   -- disable redundant highlighting
   { "RRethy/vim-illuminate",               enabled = false },
   -- no file explorer
   { "nvim-neo-tree/neo-tree.nvim",         enabled = false },
-  -- fuck conform.nvim
-  { "stevearc/conform.nvim",               enabled = false },
 }
