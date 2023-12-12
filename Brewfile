@@ -68,6 +68,7 @@ cask 'transmission'                 # Torrent client
 cask 'barrier'                      # Synergy fork
 cask 'docker'                       # Docker Desktop
 cask 'karabiner-elements'           # Keyboard remapping
+cask 'rectangle'                    # Arrange windows
 
 # Development
 cask 'iterm2'                         # Terminal
