@@ -51,6 +51,7 @@ brew 'rustup'                     # Rust
 brew 'awscli'                     # AWS CLI
 brew 'mono'                       # Mono
 brew 'dotnet'                     # .NET
+brew 'cmake'                      # CMake
 
 #TODO
 #brew 'python3'                    # Python
