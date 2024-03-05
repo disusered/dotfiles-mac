@@ -14,6 +14,7 @@ return {
         "sqlfluff",
         "elixir-ls",
         "omnisharp",
+        "flake8",
       },
     },
   },
