@@ -23,7 +23,7 @@ return {
   -- disable UI extras
   { "stevearc/dressing.nvim",              enabled = true },
   { "rcarriga/nvim-notify",                enabled = true },
-  { "folke/noice.nvim",                    enabled = true },
+  { "folke/noice.nvim",                    enabled = false },
   { "folke/edgy.nvim",                     enabled = false },
   -- disable redundant highlighting
   { "RRethy/vim-illuminate",               enabled = false },
