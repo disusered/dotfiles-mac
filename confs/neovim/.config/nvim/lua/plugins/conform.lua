@@ -20,8 +20,16 @@ return {
           vue = { "prettier" },
           typescript = { "prettier" },
           -- elixir formatting
-          -- heex = { "mix" },
-          -- elixir = { "mix" },
+          heex = { "mix" },
+          elixir = { "mix" },
+          -- python formatting
+          python = function(bufnr)
+            if require("conform").get_formatter_info("ruff_format", bufnr).available then
+              return { "ruff_format" }
+            else
+              return { "isort", "black" }
+            end
+          end,
         },
         -- The options you set here will be merged with the builtin formatters.
         -- You can also define any custom formatters here.

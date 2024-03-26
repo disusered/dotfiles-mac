@@ -51,7 +51,17 @@ brew 'rustup'                     # Rust
 brew 'awscli'                     # AWS CLI
 brew 'mono'                       # Mono
 brew 'dotnet'                     # .NET
+brew 'make'                       # Make
 brew 'cmake'                      # CMake
+brew 'openssl'                    # OpenSSL
+brew 'zlib'                       # Zlib
+brew 'bzip2'                      # Bzip2
+brew 'readline'                   # Readline
+brew 'sqlite'                     # SQLite
+brew 'curl'                       # Curl
+brew 'llvm'                       # LLVM
+brew 'ncurses'                    # Ncurses
+brew 'xz'                         # XZ
 brew 'python3'                    # Python 3 (default)
 brew 'python@3.9'                 # Python 3.9
 brew 'python@3.11'                # Python 3.11

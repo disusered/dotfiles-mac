@@ -14,9 +14,15 @@ return {
         "sqlfluff",
         "elixir-ls",
         "omnisharp",
+        -- used by prx api
         "flake8",
+        -- used by lazyvim python module
         "pyright",
         "ruff-lsp",
+        -- used by my conform config
+        "ruff",
+        "isort",
+        "black",
       },
     },
   },
