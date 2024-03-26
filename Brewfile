@@ -52,9 +52,11 @@ brew 'awscli'                     # AWS CLI
 brew 'mono'                       # Mono
 brew 'dotnet'                     # .NET
 brew 'cmake'                      # CMake
+brew 'python3'                    # Python 3 (default)
+brew 'python@3.9'                 # Python 3.9
+brew 'python@3.11'                # Python 3.11
 
 #TODO
-#brew 'python3'                    # Python
 #cask 'virtualbox'                 # Virtualbox
 #brew 'vagrant'                    # Vagrant
 #brew 'terraform'                  # Terraform
