@@ -15,6 +15,8 @@ return {
         "elixir-ls",
         "omnisharp",
         "flake8",
+        "pyright",
+        "ruff-lsp",
       },
     },
   },
