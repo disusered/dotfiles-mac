@@ -16,8 +16,12 @@ return {
         formatters_by_ft = {
           -- sql formatting
           sql = { "sqlfluff" },
+          -- javascript formatting
           vue = { "prettier" },
           typescript = { "prettier" },
+          -- elixir formatting
+          -- heex = { "mix" },
+          -- elixir = { "mix" },
         },
         -- The options you set here will be merged with the builtin formatters.
         -- You can also define any custom formatters here.
