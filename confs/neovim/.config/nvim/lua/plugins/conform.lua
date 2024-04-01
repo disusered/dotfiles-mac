@@ -14,6 +14,8 @@ return {
         },
         ---@type table<string, conform.FormatterUnit[]>
         formatters_by_ft = {
+          -- lua formatting
+          lua = { "stylua" },
           -- sql formatting
           sql = { "sqlfluff" },
           -- javascript formatting
@@ -50,6 +52,6 @@ return {
         },
       }
       return opts
-    end
+    end,
   },
 }
