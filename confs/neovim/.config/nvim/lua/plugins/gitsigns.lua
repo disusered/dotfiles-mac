@@ -1,13 +1,13 @@
 return {
-  "lewis6991/gitsigns.nvim",
+  "echasnovski/mini.diff",
   opts = {
-    signs = {
-      add = { text = "+" },
-      change = { text = "▎" },
-      delete = { text = "_" },
-      topdelete = { text = "‾" },
-      changedelete = { text = "~" },
-      untracked = { text = "▎" },
+    view = {
+      style = "sign",
+      signs = {
+        add = "+",
+        change = "▎",
+        delete = "_",
+      },
     },
   },
 }
