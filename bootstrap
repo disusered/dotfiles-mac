@@ -44,3 +44,6 @@ fi
 
 # Build Bat theme cache
 bat cache --build
+
+# Install Neovim plugins
+/usr/local/python3/bin/pip3 install pynvim --upgrade --user --break-system-packages
