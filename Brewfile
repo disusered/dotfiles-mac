@@ -34,6 +34,7 @@ brew 'tmux'                       # Virtual screens
 brew 'tpm'                        # Tmux Plugin Manager
 brew 'elixir'                     # Elixir and Erlang
 brew 'zsh'                        # ZSH
+brew 'bash'                       # Bash (newer than macOS)
 brew 'pure'                       # Prompt for ZSH
 brew 'ncdu'                       # Disk usage
 brew 'prettier'                   # Prettier
