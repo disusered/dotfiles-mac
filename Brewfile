@@ -75,23 +75,26 @@ brew 'python@3.11'                # Python 3.11
 
 # GUI
 # System
-#cask 'onyx'                         # System cleaning and tweaks
-cask 'appcleaner'                   # Allows fully removing old software
-mas 'Things', id: 904280696         # To-do lists
-mas 'The Unarchiver', id: 425424353 # Handle more compressed file formats
-mas 'Amphetamine', id: 937984704    # Keep Mac awake
-cask '1Password'                    # 1Password 8
-cask '1password-cli'                # 1Password integration with CLI
-cask 'transmission'                 # Torrent client
-cask 'barrier'                      # Synergy fork
-cask 'docker'                       # Docker Desktop
-cask 'karabiner-elements'           # Keyboard remapping
-cask 'rectangle'                    # Arrange windows
+cask 'onyx'                                 # System cleaning and tweaks
+cask 'appcleaner'                           # Allows fully removing old software
+mas 'Things', id: 904280696                 # To-do lists
+mas 'The Unarchiver', id: 425424353         # Handle more compressed file formats
+mas 'Amphetamine', id: 937984704            # Keep Mac awake
+cask '1Password'                            # 1Password 8
+cask '1password-cli'                        # 1Password integration with CLI
+mas '1Password for Safari', id: 1569813296  # 1Password Extension for Safari
+cask 'transmission'                         # Torrent client
+cask 'docker'                               # Docker Desktop
+cask 'rectangle'                            # Arrange windows
+cask 'zoom'                                 # Video conferencing
+cask 'around'                               # Video conferencing
+mas 'AdGuard for Safari', id: 1440147259    # Ad blocker
+mas 'xScope 4', id: 889428659	              # UI tools
 
 # Development
 cask 'iterm2'                         # Terminal
-cask 'keybase'                        # GPG
-cask 'boop'                           # Useful text commands for development
+#cask 'keybase'                        # GPG
+#cask 'boop'                           # Useful text commands for development
 mas 'xScope', id: 889428659           # Tools for graphic development
 mas 'Sim Daltonism', id: 693112260    # Simulate color-blindness
 cask 'imagealpha'                     # Optimize transparent PNG
@@ -105,6 +108,7 @@ mas 'Xcode', id: 497799835            # Xcode
 
 # Fonts
 cask 'font-hasklig'
+cask 'font-hasklug-nerd-font'
 cask 'font-symbols-only-nerd-font'
 
 # Browsers
@@ -117,12 +121,15 @@ cask 'google-chrome'
 
 # Etc
 cask 'steam'
+cask 'nvidia-geforce-now'
 cask 'discord'
-mas 'Telegram Lite', id: 946399090
+mas 'Parcel', id: 639968404                         # Shipment tracking
+mas 'Awesome Habits: Habit Tracker', id: 1514915737 # Habit tracker
+#mas 'Telegram Lite', id: 946399090
 
 # vscode
 vscode "GitHub.codespaces"          # Allow connecting to codespaces
 vscode "enkia.tokyo-night"          # Colorscheme/theme
-vscode "asvetliakov.vscode-neovim"  # Neovim integration
+#vscode "asvetliakov.vscode-neovim"  # Neovim integration
 vscode "yinfei.luahelper"           # Lua LSP
 vscode "GitHub.copilot"             # Github Copilot
