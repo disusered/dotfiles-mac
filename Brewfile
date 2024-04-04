@@ -78,6 +78,7 @@ brew 'python@3.11'                # Python 3.11
 cask 'onyx'                                 # System cleaning and tweaks
 cask 'appcleaner'                           # Allows fully removing old software
 mas 'Things', id: 904280696                 # To-do lists
+cask 'notion'                               # Notion
 mas 'The Unarchiver', id: 425424353         # Handle more compressed file formats
 mas 'Amphetamine', id: 937984704            # Keep Mac awake
 cask '1Password'                            # 1Password 8
