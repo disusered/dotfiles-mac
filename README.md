@@ -2,13 +2,19 @@
 
 > Giving up on a universal dotfiles, instead creating specialized configurations
 
-1. Create SSH key for Github and add the public key to [Github](https://github.com/settings/keys)
+1. Install Xcode Command Line Tools
+  ```sh
+  xcode-select --install
+	sudo xcodebuild -license accept
+  ```
+
+2. Create SSH key for Github and add the public key to [Github](https://github.com/settings/keys)
   ```sh
   # https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
   ssh-keygen -t ed25519 -C "crosquillas@gmail.com"
   ```
 
-2. Install dependencies and configs
+3. Install dependencies and configure dotfiles
   ```sh
   # Clone repository to home directory
   git clone git@github.com:disusered/dotfiles-mac.git ~/.dotfiles
@@ -18,26 +24,11 @@
   ~/.dotfiles/bootstrap
   ```
 
-3. Import PGP keys from Keybase
-  ```sh
-  # Open Keybase.app and log-in, afterwards run the import script
-  chmod +x ~/.dotfiles/keys
-  ~/.dotfiles/keys
-
-  # Follow the prompts in Keybase and the CLI. Once done, check that the secret key was imported
-  # It should match the `signingkey` in `.gitconfig`
-  gpg --list-secret-keys --keyid-format LONG
-  ```
-
 4. Configure SSH with 1Password
   ```sh
   # https://developer.1password.com/docs/ssh/git-commit-signing/
 
-  # 1) Open 1Password and go to Preferences > Developer > Use the SSH agent
-  # In a terminal, create an SSH config file and copy the contents from 1Password
-  mkdir -p ~/.ssh
-  touch ~/.ssh/config
-  chmod 600 ~/.ssh/config
+  # 1) Open 1Password and go to Preferences > Developer > Use the SSH agent and follow the instructions
 
   # 2) In 1Password, find the SSH key and follow the instructions to configure
   # "Sign Your Git Commits".
