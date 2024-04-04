@@ -46,4 +46,4 @@ fi
 bat cache --build
 
 # Install Neovim plugins
-/usr/local/python3/bin/pip3 install pynvim --upgrade --user --break-system-packages
+/opt/homebrew/bin/pip3 install pynvim --upgrade --user --break-system-packages
