@@ -25,7 +25,7 @@
   "mini.comment": { "branch": "main", "commit": "ea3021eb959080a4ed4793733f12a194dfe06edc" },
   "mini.diff": { "branch": "main", "commit": "fe0e1d511144015dbeeef699287feeb4545e08ad" },
   "mini.indentscope": { "branch": "main", "commit": "cf07f19e718ebb0bcc5b00999083ce11c37b8d40" },
-  "neoconf.nvim": { "branch": "main", "commit": "f41d28e3f9c873de17ecab12e767fc8cfd94c7a2" },
+  "neoconf.nvim": { "branch": "main", "commit": "8b6326e77d3c01ba330943b5b9037455ce0b4b1f" },
   "neodev.nvim": { "branch": "main", "commit": "ce9a2e8eaba5649b553529c5498acb43a6c317cd" },
   "neotest": { "branch": "master", "commit": "e07fe8241112274aae9947b98d255763738a1d52" },
   "neotest-elixir": { "branch": "master", "commit": "3117ca5442c02998847131c39551b76a6ceac9d7" },

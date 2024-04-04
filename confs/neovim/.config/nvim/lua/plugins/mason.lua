@@ -14,6 +14,7 @@ return {
         "sqlfluff",
         "elixir-ls",
         "omnisharp",
+        "hadolint",
         -- used by prx api
         "flake8",
         -- used by lazyvim python module
