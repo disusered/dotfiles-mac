@@ -5,10 +5,6 @@ log() {
 	echo -e "\033[1;32m[+]\033[0m $1"
 }
 
-# Create authorized keys file
-touch ~/.ssh/authorized_keys
-chmod 644 ~/.ssh/authorized_keys
-
 # Install Homebrew
 if ! command -v brew &>/dev/null; then
 	log "Installing Homebrew"
@@ -27,7 +23,11 @@ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
 # Configure symlinks to configs
 log "Symlinking dotfiles with Stow"
-stow -d $HOME/.dotfiles/confs -t $HOME -R git neovim tmux zsh bat btop ncdu lazygit amfora
+stow -d $HOME/.dotfiles/confs -t $HOME -R git neovim tmux zsh bat btop ncdu lazygit amfora ssh
+
+# Create authorized keys file
+touch ~/.ssh/authorized_keys
+chmod 644 ~/.ssh/authorized_keys
 
 # Set ZSH as default shell if not already set
 if [[ $SHELL != '/bin/zsh' ]]; then
