@@ -4,6 +4,8 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     /usr/local/opt/libpq/bin
     # Node version management
     $VOLTA_HOME/bin
+    # Docker Desktop
+    $HOME/.docker/bin
     # Inherit PATH
     $path
   )
