@@ -120,12 +120,12 @@ cask 'google-chrome'
 #cask 'safari-technology-preview'
 
 # Etc
-cask 'steam'
-cask 'nvidia-geforce-now'
-cask 'discord'
+cask 'steam'                                        # Steam
+cask 'nvidia-geforce-now'                           # Geforce Now
+cask 'discord'                                      # Discord
 mas 'Parcel', id: 639968404                         # Shipment tracking
 mas 'Awesome Habits: Habit Tracker', id: 1514915737 # Habit tracker
-#mas 'Telegram Lite', id: 946399090
+mas 'Telegram', id: 747648890                       # Telegram
 
 # vscode
 vscode "GitHub.codespaces"          # Allow connecting to codespaces
