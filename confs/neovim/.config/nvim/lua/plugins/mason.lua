@@ -15,6 +15,7 @@ return {
         "elixir-ls",
         "omnisharp",
         "hadolint",
+        "checkmake",
         -- used by prx api
         "flake8",
         -- used by lazyvim python module
