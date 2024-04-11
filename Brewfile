@@ -129,8 +129,13 @@ mas 'Awesome Habits: Habit Tracker', id: 1514915737 # Habit tracker
 mas 'Telegram', id: 747648890                       # Telegram
 
 # vscode
-vscode "GitHub.codespaces"          # Allow connecting to codespaces
-vscode "enkia.tokyo-night"          # Colorscheme/theme
-#vscode "asvetliakov.vscode-neovim"  # Neovim integration
-vscode "yinfei.luahelper"           # Lua LSP
-vscode "GitHub.copilot"             # Github Copilot
+vscode "GitHub.codespaces"                  # Allow connecting to codespaces
+vscode "asvetliakov.vscode-neovim"          # Neovim integration
+vscode "yinfei.luahelper"                   # Lua LSP
+vscode "GitHub.copilot"                     # Github Copilot
+vscode "ms-azuretools.vscode-docker"        # Docker
+vscode "ms-vscode-remote.remote-containers" # Remote containers
+vscode "enkia.tokyo-night"                  # Colorscheme/theme
+vscode "Catppuccin.catppuccin-vsc"          # Colorscheme/theme
+vscode "ms-python.flake8"                   # Python linting
+vscode "wayou.vscode-todo-highlight"        # Highlight TODOs
