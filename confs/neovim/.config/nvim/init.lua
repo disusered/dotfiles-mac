@@ -1,7 +1,7 @@
 if vim.g.vscode then
-  -- VSCode Neovim extension
+  -- VSCode Neovim-specific settings
   require("vscode.base")
-else
-  -- Initialize LazyVim
-  require("config.lazy")
 end
+
+-- Initialize LazyVim
+require("config.lazy")
