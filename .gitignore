@@ -1,2 +1,2 @@
-!confs/ssh/.ssh/config
 confs/ssh/.ssh
+!confs/ssh/.ssh/config
