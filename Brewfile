@@ -139,3 +139,6 @@ vscode "enkia.tokyo-night"                  # Colorscheme/theme
 vscode "Catppuccin.catppuccin-vsc"          # Colorscheme/theme
 vscode "ms-python.flake8"                   # Python linting
 vscode "wayou.vscode-todo-highlight"        # Highlight TODOs
+vscode "Gruntfuggly.todo-tree"              # Tree view of TODOs
+vscode "bierner.markdown-checkbox"          # Markdown checkboxes
+vscode "spmeesseman.vscode-taskexplorer"    # Task explorer
