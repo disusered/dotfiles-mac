@@ -6,16 +6,11 @@ return {
     opts = {
       ---@type table<string, conform.FormatterUnit[]>
       formatters_by_ft = {
-        -- lua formatting
-        -- lua = { "stylua" },
         -- sql formatting
         sql = { "sqlfluff" },
         -- javascript formatting
         vue = { "prettier" },
         typescript = { "prettier" },
-        -- elixir formatting
-        -- heex = { "mix" },
-        -- elixir = { "mix" },
         -- python formatting
         python = function(bufnr)
           if require("conform").get_formatter_info("ruff_format", bufnr).available then
