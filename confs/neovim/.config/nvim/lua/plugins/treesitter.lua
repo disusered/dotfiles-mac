@@ -17,6 +17,8 @@ return {
         "sql",
         "rust",
         "c_sharp",
+        "json",
+        "jsonc",
       })
     end,
   },

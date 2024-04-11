@@ -4,6 +4,7 @@
 -- This file is automatically loaded by lazyvim.config.init
 local Util = require("lazyvim.util")
 
+-- TODO: Some of these should work in VSCode
 local function map(mode, lhs, rhs, opts)
   local keys = require("lazy.core.handler").handlers.keys
   ---@cast keys LazyKeysHandler
@@ -80,14 +81,18 @@ map("n", "<leader>uw", function() Util.toggle("wrap") end, { desc = "Toggle Word
 map("n", "<leader>ul", function() Util.toggle.number() end, { desc = "Toggle Line Numbers" })
 map("n", "<leader>ud", Util.toggle.diagnostics, { desc = "Toggle Diagnostics" })
 local conceallevel = vim.o.conceallevel > 0 and vim.o.conceallevel or 3
-map("n", "<leader>uc", function() Util.toggle("conceallevel", false, {0, conceallevel}) end, { desc = "Toggle Conceal" })
+map("n", "<leader>uc", function() Util.toggle("conceallevel", false, { 0, conceallevel }) end,
+  { desc = "Toggle Conceal" })
 if vim.lsp.inlay_hint then
   map("n", "<leader>uh", function() vim.lsp.inlay_hint(0, nil) end, { desc = "Toggle Inlay Hints" })
 end
 
 -- lazygit
-map("n", "<leader>gg", function() Util.terminal.open({ "lazygit" }, { cwd = Util.root.get(), esc_esc = false, ctrl_hjkl = false }) end, { desc = "Lazygit (root dir)" })
-map("n", "<leader>gG", function() Util.terminal.open({ "lazygit" }, {esc_esc = false, ctrl_hjkl = false}) end, { desc = "Lazygit (cwd)" })
+map("n", "<leader>gg",
+  function() Util.terminal.open({ "lazygit" }, { cwd = Util.root.get(), esc_esc = false, ctrl_hjkl = false }) end,
+  { desc = "Lazygit (root dir)" })
+map("n", "<leader>gG", function() Util.terminal.open({ "lazygit" }, { esc_esc = false, ctrl_hjkl = false }) end,
+  { desc = "Lazygit (cwd)" })
 
 -- quit
 map("n", "<leader>qq", "<cmd>qa<cr>", { desc = "Quit all" })

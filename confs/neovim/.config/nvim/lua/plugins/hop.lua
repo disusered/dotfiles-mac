@@ -1,6 +1,7 @@
 return {
   {
     "phaazon/hop.nvim",
+    vscode = true,
     keys = {
       {
         "s",
