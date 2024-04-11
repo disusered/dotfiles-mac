@@ -7,6 +7,5 @@ requests.sh
 swatch*
 *.ropeproject
 *.pgsql
-*.vscode
 .neoconf.json
 pr
