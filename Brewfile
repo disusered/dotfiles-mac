@@ -95,7 +95,6 @@ mas 'xScope 4', id: 889428659	              # UI tools
 
 # Development
 cask 'iterm2'                         # Terminal
-#cask 'keybase'                        # GPG
 #cask 'boop'                           # Useful text commands for development
 mas 'xScope', id: 889428659           # Tools for graphic development
 mas 'Sim Daltonism', id: 693112260    # Simulate color-blindness
