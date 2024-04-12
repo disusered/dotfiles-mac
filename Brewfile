@@ -67,6 +67,7 @@ brew 'python3'                    # Python 3 (default)
 brew 'python@3.9'                 # Python 3.9
 brew 'python@3.11'                # Python 3.11
 cask 'devpod'                     # DevPod (devcontainers)
+brew 'figlet'                     # Figlet
 
 #TODO
 #cask 'virtualbox'                 # Virtualbox
@@ -128,17 +129,33 @@ mas 'Parcel', id: 639968404                         # Shipment tracking
 mas 'Awesome Habits: Habit Tracker', id: 1514915737 # Habit tracker
 mas 'Telegram', id: 747648890                       # Telegram
 
-# vscode
-vscode "GitHub.codespaces"                  # Allow connecting to codespaces
-vscode "asvetliakov.vscode-neovim"          # Neovim integration
-vscode "yinfei.luahelper"                   # Lua LSP
-vscode "GitHub.copilot"                     # Github Copilot
-vscode "ms-azuretools.vscode-docker"        # Docker
-vscode "ms-vscode-remote.remote-containers" # Remote containers
-vscode "enkia.tokyo-night"                  # Colorscheme/theme
-vscode "Catppuccin.catppuccin-vsc"          # Colorscheme/theme
-vscode "ms-python.flake8"                   # Python linting
-vscode "wayou.vscode-todo-highlight"        # Highlight TODOs
-vscode "Gruntfuggly.todo-tree"              # Tree view of TODOs
-vscode "bierner.markdown-checkbox"          # Markdown checkboxes
+# vscode plugins
+
+# ide features
 vscode "spmeesseman.vscode-taskexplorer"    # Task explorer
+vscode "Gruntfuggly.todo-tree"              # Tree view of TODOs
+vscode "wayou.vscode-todo-highlight"        # Highlight TODOs
+vscode "GitHub.copilot"                     # Github Copilot
+vscode "GitHub.copilot-chat"                # Github Copilot chat
+vscode "GitHub.codespaces"                  # Allow connecting to codespaces
+vscode "ms-azuretools.vscode-docker"        # Docker administration
+vscode "Catppuccin.catppuccin-vsc"          # Colorscheme/theme
+
+# language features
+vscode "ms-python.python"                   # Python
+vscode "ms-python.debugpy"                  # Python debugger
+vscode "ms-python.vscode-pylance"           # Python LSP
+vscode "ms-python.flake8"                   # Python linting
+vscode "yinfei.luahelper"                   # Lua LSP
+vscode "ms-vscode-remote.remote-containers" # Remote containers
+vscode "JakeBecker.elixir-ls"               # Elixir LSP
+vscode "ritvyk.heex-html"                   # HEEX syntax highlighting
+vscode "bierner.markdown-checkbox"          # Markdown checkboxes
+
+# magic
+vscode "asvetliakov.vscode-neovim"          # Neovim integration
+vscode "ms-vscode-remote.vscode-remote-extensionpack" # Remote extension pack
+vscode "ms-vscode.remote-explorer"          # Remote explorer
+vscode "ms-vscode-remote.remote-ssh"        # Remote SSH
+vscode "ms-vscode-remote.remote-ssh-edit"   # Remote SSH
+vscode "ms-vscode-remote.remote-containers" # Remote containers
