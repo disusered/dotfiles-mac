@@ -16,6 +16,7 @@ return {
         "omnisharp",
         "hadolint",
         "checkmake",
+        "emmet-language-server",
         -- used by prx api
         "flake8",
         -- used by lazyvim python module
