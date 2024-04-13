@@ -17,6 +17,7 @@ return {
         "hadolint",
         "checkmake",
         "emmet-language-server",
+        "js-debug-adapter",
         -- used by prx api
         "flake8",
         -- used by lazyvim python module
