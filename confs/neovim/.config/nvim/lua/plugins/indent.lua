@@ -1,4 +1,4 @@
-local flavor = require("catppuccin.palettes").get_palette(vim.env.CATPUCCIN_FLAVOR)
+local flavor = require("catppuccin.palettes").get_palette(vim.env.CATPPUCCIN_FLAVOR)
 
 return {
   {

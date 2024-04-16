@@ -2,7 +2,7 @@
 alias git='noglob git'
 
 # Replace cat with bat
-alias cat='bat --theme="Catppuccin-${CATPUCCIN_FLAVOR}"'
+alias cat='bat --theme="Catppuccin-${CATPPUCCIN_FLAVOR}"'
 
 # Tmux attach alias
 alias ta='tmux attach -t'

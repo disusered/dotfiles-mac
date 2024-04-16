@@ -34,7 +34,7 @@ if [[ $SHELL != '/bin/zsh' ]]; then
 	log "Setting ZSH as default shell"
 	chsh -s '/bin/zsh'
   # FIXME: Test on a new install, this might not work since the shell is not sourced
-	fast-theme ~/.config/fsh/catppuccin-$CATPUCCIN_FLAVOR
+	fast-theme ~/.config/fsh/catppuccin-$CATPPUCCIN_FLAVOR
 fi
 
 # Configure FZF if not already configured in shell i.e. if ~/.fzf.zsh does not exist

@@ -5,7 +5,7 @@ return {
     priority = 1000,
     lazy = false,
     opts = {
-      flavour = vim.env.CATPUCCIN_FLAVOR,
+      flavour = vim.env.CATPPUCCIN_FLAVOR,
     },
   },
 }
