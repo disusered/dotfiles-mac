@@ -7,7 +7,7 @@ return {
   { "folke/flash.nvim",                    enabled = false },
   { "ggandor/flit.nvim",                   enabled = false },
   -- remove excessive indent cues
-  { "lukas-reineke/indent-blankline.nvim", enabled = false },
+  { "lukas-reineke/indent-blankline.nvim", enabled = true },
   -- no automatic pairs
   { "mini.pairs",                          enabled = false },
   -- no session management
