@@ -14,6 +14,10 @@ return {
           "CatppuccinIndentViolet",
           "CatppuccinIndentCyan",
         }
+      },
+      exclude = {
+        filetypes = { "lua", "css" },
+        buftypes = { "terminal" },
       }
     },
     config = function(_, opts)
