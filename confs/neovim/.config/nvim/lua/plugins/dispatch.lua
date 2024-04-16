@@ -36,7 +36,7 @@ return {
       {
         "<leader>m",
         select_make_target,
-        desc = "Dispatch a Make target"
+        desc = "Start a Make target"
       },
     },
   }
