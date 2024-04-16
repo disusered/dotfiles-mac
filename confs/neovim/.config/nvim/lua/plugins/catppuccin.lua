@@ -5,7 +5,7 @@ return {
     priority = 1000,
     lazy = false,
     opts = {
-      flavour = "mocha", -- latte, frappe, macchiato, mocha
+      flavour = vim.env.CATPUCCIN_FLAVOR,
     },
   },
 }

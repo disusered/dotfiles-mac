@@ -33,7 +33,8 @@ chmod 644 ~/.ssh/authorized_keys
 if [[ $SHELL != '/bin/zsh' ]]; then
 	log "Setting ZSH as default shell"
 	chsh -s '/bin/zsh'
-	fast-theme ~/.config/fsh/catppuccin-mocha
+  # FIXME: Test on a new install, this might not work since the shell is not sourced
+	fast-theme ~/.config/fsh/catppuccin-$CATPUCCIN_FLAVOR
 fi
 
 # Configure FZF if not already configured in shell i.e. if ~/.fzf.zsh does not exist
