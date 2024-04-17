@@ -116,8 +116,8 @@ cask 'font-symbols-only-nerd-font'
 # Browsers
 cask 'firefox'
 cask 'google-chrome'
+cask 'google-chrome-beta'
 #cask 'firefox-developer-edition'
-#cask 'google-chrome-beta'
 #cask 'google-chrome-canary'
 #cask 'safari-technology-preview'
 
