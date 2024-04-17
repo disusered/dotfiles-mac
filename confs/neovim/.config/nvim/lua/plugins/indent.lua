@@ -5,18 +5,19 @@ return {
     'lukas-reineke/indent-blankline.nvim',
     opts = {
       indent = {
-        highlight = {
-          "CatppuccinIndentRed",
-          "CatppuccinIndentYellow",
-          "CatppuccinIndentBlue",
-          "CatppuccinIndentOrange",
-          "CatppuccinIndentGreen",
-          "CatppuccinIndentViolet",
-          "CatppuccinIndentCyan",
-        }
+        -- TODO: Only enable rainbow in indent languages like Python
+        -- highlight = {
+        --   "CatppuccinIndentRed",
+        --   "CatppuccinIndentYellow",
+        --   "CatppuccinIndentBlue",
+        --   "CatppuccinIndentOrange",
+        --   "CatppuccinIndentGreen",
+        --   "CatppuccinIndentViolet",
+        --   "CatppuccinIndentCyan",
+        -- }
       },
       exclude = {
-        filetypes = { "lua", "css" },
+        filetypes = {},
         buftypes = { "terminal" },
       }
     },
