@@ -95,6 +95,7 @@ cask 'zoom'                                 # Video conferencing
 cask 'around'                               # Video conferencing
 mas 'AdGuard for Safari', id: 1440147259    # Ad blocker
 mas 'xScope 4', id: 889428659	              # UI tools
+cask 'vlc'                                  # Media player
 
 # Development
 cask 'iterm2'                         # Terminal
