@@ -19,6 +19,8 @@ brew 'stow'                       # Stow for symlinking configs
 brew 'lua'                        # Lua
 brew 'luarocks'                   # Luarocks
 brew 'gnupg'                      # GPG for signing commits
+brew 'gpgme'                      # GPGME for signing commits in Neovim
+brew 'pinentry-mac'               # Pinentry for GPG
 brew 'stow'                       # Symlink configs
 brew 'wget'                       # Download files
 brew 'gh'                         # Github CLI
