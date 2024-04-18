@@ -12,15 +12,7 @@ return {
       'MunifTanjim/nui.nvim',
       'nvim-tree/nvim-web-devicons',
       'nvim-lua/plenary.nvim',
-      {
-        "chrisgrieser/nvim-tinygit",
-        ft = { "git_rebase", "gitcommit" },
-        dependencies = {
-          "stevearc/dressing.nvim",
-          "nvim-telescope/telescope.nvim",
-          "rcarriga/nvim-notify",
-        },
-      },
+      "chrisgrieser/nvim-tinygit"
     },
     cmd = { 'Fugit2', 'Fugit2Graph' },
     keys = {
