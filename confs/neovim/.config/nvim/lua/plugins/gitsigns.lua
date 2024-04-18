@@ -30,7 +30,7 @@ return {
         desc = "Git log",
       },
       {
-        "<leader>gd",
+        "<leader>gD",
         gitsigns.toggle_deleted,
         desc = "Toggle Deleted",
       },
