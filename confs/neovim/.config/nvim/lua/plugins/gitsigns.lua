@@ -17,17 +17,22 @@ return {
       {
         "<leader>gw",
         gitsigns.stage_buffer,
-        desc = "Git write current file",
+        desc = "Stage Buffer",
       },
       {
         "<leader>gr",
         gitsigns.reset_buffer,
-        desc = "Git read current file",
+        desc = "Reset Buffer",
       },
       {
-        "<leader>gb",
-        function() gitsigns.blame_line { full = true } end,
-        desc = "Git blame",
+        "<leader>gl",
+        "<cmd>Fugit2Graph<cr>",
+        desc = "Git log",
+      },
+      {
+        "<leader>gd",
+        gitsigns.toggle_deleted,
+        desc = "Toggle Deleted",
       },
     }
   end
