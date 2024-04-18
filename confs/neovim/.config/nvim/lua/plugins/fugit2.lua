@@ -28,7 +28,13 @@ return {
         '<leader>gs',
         mode = 'n',
         '<cmd>Fugit2<cr>',
-        desc = "Git status",
+        desc = "Git Status",
+      },
+      {
+        '<leader>gC',
+        mode = 'n',
+        function() require("tinygit").smartCommit() end,
+        desc = "Smart Commit",
       },
     }
   }
