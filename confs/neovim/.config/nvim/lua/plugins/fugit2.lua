@@ -30,11 +30,6 @@ return {
         '<cmd>Fugit2<cr>',
         desc = "Git status",
       },
-      {
-        "<leader>gw",
-        require('gitsigns').stage_buffer,
-        desc = "Git write current file",
-      },
     }
   }
 }
