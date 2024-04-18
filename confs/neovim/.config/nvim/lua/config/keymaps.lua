@@ -87,13 +87,6 @@ if vim.lsp.inlay_hint then
   map("n", "<leader>uh", function() vim.lsp.inlay_hint(0, nil) end, { desc = "Toggle Inlay Hints" })
 end
 
--- lazygit
-map("n", "<leader>gg",
-  function() Util.terminal.open({ "lazygit" }, { cwd = Util.root.get(), esc_esc = false, ctrl_hjkl = false }) end,
-  { desc = "Lazygit (root dir)" })
-map("n", "<leader>gG", function() Util.terminal.open({ "lazygit" }, { esc_esc = false, ctrl_hjkl = false }) end,
-  { desc = "Lazygit (cwd)" })
-
 -- quit
 map("n", "<leader>qq", "<cmd>qa<cr>", { desc = "Quit all" })
 
