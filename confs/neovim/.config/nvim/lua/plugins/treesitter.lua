@@ -19,6 +19,8 @@ return {
         "c_sharp",
         "json",
         "jsonc",
+        "gitcommit",
+        "git_rebase",
       })
     end,
   },

@@ -11,7 +11,7 @@ return {
       sections = {
         lualine_z = {},
       },
-      extensions = { "neo-tree", "lazy", "quickfix", "fugitive" },
+      extensions = { "neo-tree", "lazy", "quickfix" },
     },
   },
 }

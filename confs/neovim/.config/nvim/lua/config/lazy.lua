@@ -15,7 +15,6 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.coding.copilot" },
     { import = "lazyvim.plugins.extras.coding.yanky" },
     { import = "lazyvim.plugins.extras.editor.aerial" },
-    { import = "lazyvim.plugins.extras.editor.mini-diff" },
     { import = "lazyvim.plugins.extras.test.core" },
     { import = "lazyvim.plugins.extras.dap.core" },
     -- add language support
