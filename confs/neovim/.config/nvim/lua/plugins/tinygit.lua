@@ -6,23 +6,31 @@ return {
       "nvim-telescope/telescope.nvim",
       "rcarriga/nvim-notify",
     },
-    keys = {
-      {
-        '<leader>gC',
-        mode = 'n',
-        function() require("tinygit").smartCommit() end,
-        desc = "Smart Commit",
-      },
-      {
-        '<leader>gA',
-        function() require("tinygit").amendOnlyMsg {} end,
-        desc = "Amend Message",
-      },
-      {
-        '<leader>gE',
-        function() require("tinygit").amendOnlyMsg {} end,
-        desc = "Amend No Edit",
+    keys = function()
+      local tinygit = require("tinygit")
+      return {
+        {
+          '<leader>gC',
+          mode = 'n',
+          function() tinygit.smartCommit() end,
+          desc = "Smart Commit",
+        },
+        {
+          '<leader>gA',
+          function() tinygit.amendOnlyMsg {} end,
+          desc = "Amend Message",
+        },
+        {
+          '<leader>gE',
+          function() tinygit.amendOnlyMsg {} end,
+          desc = "Amend No Edit",
+        },
+        {
+          '<leader>gU',
+          function() tinygit.undoLastCommit() end,
+          desc = "Undo Last Commit",
+        }
       }
-    }
+    end
   },
 }
