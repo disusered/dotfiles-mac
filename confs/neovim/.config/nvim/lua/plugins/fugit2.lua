@@ -23,10 +23,9 @@ return {
         desc = "Git Status",
       },
       {
-        '<leader>gC',
-        mode = 'n',
-        function() require("tinygit").smartCommit() end,
-        desc = "Smart Commit",
+        "<leader>gl",
+        "<cmd>Fugit2Graph<cr>",
+        desc = "Git log",
       },
     }
   }

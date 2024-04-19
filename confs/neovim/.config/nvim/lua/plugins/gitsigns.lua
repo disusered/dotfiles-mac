@@ -25,11 +25,6 @@ return {
         desc = "Reset Buffer",
       },
       {
-        "<leader>gl",
-        "<cmd>Fugit2Graph<cr>",
-        desc = "Git log",
-      },
-      {
         "<leader>gD",
         gitsigns.toggle_deleted,
         desc = "Toggle Deleted",
