@@ -22,7 +22,7 @@ return {
         },
         {
           '<leader>gE',
-          function() tinygit.amendOnlyMsg {} end,
+          function() tinygit.amendNoEdit {} end,
           desc = "Amend No Edit",
         },
         {
