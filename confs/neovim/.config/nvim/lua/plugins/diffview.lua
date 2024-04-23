@@ -15,6 +15,9 @@ return {
         else
           -- No open Diffview exists: open a new one
           vim.cmd.DiffviewOpen()
+          -- Focus the changes pane
+          vim.cmd('wincmd l')
+          vim.cmd('wincmd l')
         end
       end
 
