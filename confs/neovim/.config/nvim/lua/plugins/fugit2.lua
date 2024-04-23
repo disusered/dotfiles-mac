@@ -16,12 +16,13 @@ return {
     },
     cmd = { 'Fugit2', 'Fugit2Graph' },
     keys = {
-      {
-        '<leader>gs',
-        mode = 'n',
-        '<cmd>Fugit2<cr>',
-        desc = "Git Status",
-      },
+      -- TODO: Enable when git signing is fixed
+      -- {
+      --   '<leader>gs',
+      --   mode = 'n',
+      --   '<cmd>Fugit2<cr>',
+      --   desc = "Git Status",
+      -- },
       {
         "<leader>gl",
         "<cmd>Fugit2Graph<cr>",

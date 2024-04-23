@@ -6,7 +6,24 @@ return {
       'DiffviewFileHistory', 'DiffviewOpen', 'DiffviewToggleFiles', 'DiffviewFocusFiles', 'DiffviewRefresh'
     },
     keys = function()
+      local diffview_toggle = function()
+        local lib = require("diffview.lib")
+        local view = lib.get_current_view()
+        if view then
+          -- Current tabpage is a Diffview; close it
+          vim.cmd.DiffviewClose()
+        else
+          -- No open Diffview exists: open a new one
+          vim.cmd.DiffviewOpen()
+        end
+      end
+
       return {
+        {
+          "<leader>gs",
+          function() diffview_toggle() end,
+          desc = "Open diff view",
+        },
         {
           "<leader>gdo",
           "<cmd>DiffviewOpen<cr>",
