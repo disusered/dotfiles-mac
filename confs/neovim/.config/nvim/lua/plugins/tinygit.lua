@@ -29,6 +29,16 @@ return {
           '<leader>gU',
           function() tinygit.undoLastCommit() end,
           desc = "Undo Last Commit",
+        },
+        {
+          '<leader>gSu',
+          function() tinygit.stashPush() end,
+          desc = "Stash Push",
+        },
+        {
+          '<leader>gSp',
+          function() tinygit.stashPop() end,
+          desc = "Stash Pop",
         }
       }
     end
