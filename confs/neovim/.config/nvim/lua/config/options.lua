@@ -75,3 +75,7 @@ vim.o.undofile = "~/.config/nvim/undos/"
 --                    - 'r'    -- auto insert comment leader on pressing enter
 --                    - 'a'    -- don't autoformat the paragraphs (use some formatter instead)
 vim.o.formatoptions = "jncql"
+
+
+-- Set spelllang
+vim.opt.spelllang = { "en_us", "es", }

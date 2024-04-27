@@ -28,6 +28,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.tailwind" },
     { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "lazyvim.plugins.extras.lang.yaml" },
+    { import = "lazyvim.plugins.extras.lang.tex" },
     -- vscode support
     { import = "lazyvim.plugins.extras.vscode" },
     -- import/override with your plugins
@@ -51,7 +52,7 @@ require("lazy").setup({
         "gzip",
         -- "matchit",
         -- "matchparen",
-        "netrwPlugin",
+        -- "netrwPlugin", # needed to download languages
         "tarPlugin",
         "tohtml",
         "tutor",

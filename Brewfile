@@ -71,6 +71,8 @@ brew 'python@3.11'                # Python 3.11
 cask 'devpod'                     # DevPod (devcontainers)
 brew 'figlet'                     # Figlet
 cask 'keycastr'                   # Keycastr
+cask 'mactex-no-gui'              # MacTeX without GUI
+cask 'skim'                       # Skim PDF reader
 
 #TODO
 #cask 'virtualbox'                 # Virtualbox
