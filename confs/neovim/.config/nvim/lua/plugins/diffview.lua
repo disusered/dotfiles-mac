@@ -23,7 +23,7 @@ return {
 
       return {
         {
-          "<leader>gs",
+          "<leader>gd",
           function() diffview_toggle() end,
           desc = "Open diff view",
         },

@@ -14,15 +14,14 @@ return {
       'nvim-lua/plenary.nvim',
       "chrisgrieser/nvim-tinygit"
     },
-    cmd = { 'Fugit2', 'Fugit2Graph' },
+    cmd = { 'Fugit2', 'Fugit2Diff', 'Fugit2Graph' },
     keys = {
-      -- TODO: Enable when git signing is fixed
-      -- {
-      --   '<leader>gs',
-      --   mode = 'n',
-      --   '<cmd>Fugit2<cr>',
-      --   desc = "Git Status",
-      -- },
+      {
+        '<leader>gs',
+        mode = 'n',
+        '<cmd>Fugit2<cr>',
+        desc = "Git Status",
+      },
       {
         "<leader>gl",
         "<cmd>Fugit2Graph<cr>",
