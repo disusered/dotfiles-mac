@@ -73,6 +73,7 @@ brew 'figlet'                     # Figlet
 cask 'keycastr'                   # Keycastr
 cask 'mactex-no-gui'              # MacTeX without GUI
 cask 'skim'                       # Skim PDF reader
+cask 'inkscape'                   # Inkscape
 
 #TODO
 #cask 'virtualbox'                 # Virtualbox
@@ -87,7 +88,7 @@ cask 'appcleaner'                           # Allows fully removing old software
 mas 'Things', id: 904280696                 # To-do lists
 cask 'notion'                               # Notion
 mas 'The Unarchiver', id: 425424353         # Handle more compressed file formats
-mas 'Amphetamine', id: 937984704            # Keep Mac awake
+cask 'Raycast'                              # Raycast
 cask '1Password'                            # 1Password 8
 cask '1password-cli'                        # 1Password integration with CLI
 mas '1Password for Safari', id: 1569813296  # 1Password Extension for Safari
@@ -134,6 +135,7 @@ cask 'discord'                                      # Discord
 mas 'Parcel', id: 639968404                         # Shipment tracking
 mas 'Awesome Habits: Habit Tracker', id: 1514915737 # Habit tracker
 mas 'Telegram', id: 747648890                       # Telegram
+mas 'WhatsApp', id: 310633997                       # WhatsApp
 
 # vscode plugins
 
