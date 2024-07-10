@@ -17,6 +17,8 @@ brew 'neovim', args: ['HEAD']     # Neovim
 brew 'neovim-remote'              # Neovim remote
 brew 'stow'                       # Stow for symlinking configs
 brew 'lua'                        # Lua
+# brew 'lua@5.1'                    # Lua 5.1 # FIXME: This is deprecated
+brew 'luajit'                     # LuaJIT
 brew 'luarocks'                   # Luarocks
 brew 'gnupg'                      # GPG for signing commits
 brew 'gpgme'                      # GPGME for signing commits in Neovim
@@ -100,6 +102,10 @@ cask 'around'                               # Video conferencing
 mas 'AdGuard for Safari', id: 1440147259    # Ad blocker
 mas 'xScope 4', id: 889428659	              # UI tools
 cask 'vlc'                                  # Media player
+cask 'skim'                                 # Skim PDF reader
+cask 'inkscape'                             # Inkscape
+cask 'airfoil'                              # Airfoil
+cask 'keycastr'                   # Keycastr
 
 # Development
 cask 'iterm2'                         # Terminal
