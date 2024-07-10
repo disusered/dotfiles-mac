@@ -72,10 +72,10 @@ brew 'python@3.9'                 # Python 3.9
 brew 'python@3.11'                # Python 3.11
 cask 'devpod'                     # DevPod (devcontainers)
 brew 'figlet'                     # Figlet
-cask 'keycastr'                   # Keycastr
 cask 'mactex-no-gui'              # MacTeX without GUI
-cask 'skim'                       # Skim PDF reader
-cask 'inkscape'                   # Inkscape
+brew 'xcode-build-server'         # Xcode Build Server
+brew 'xcbeautify'                 # Xcode Beautify
+brew 'ruby'                       # Ruby
 
 #TODO
 #cask 'virtualbox'                 # Virtualbox
