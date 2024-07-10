@@ -1,7 +1,11 @@
 return {
   {
-    'SuperBo/fugit2.nvim',
+    "SuperBo/fugit2.nvim",
     opts = {
+      rocks = {
+        enabled = true,
+        hererocks = true,
+      },
       width = 100,
       min_width = 50,
       content_width = 60,
@@ -9,17 +13,20 @@ return {
       height = "60%",
     },
     dependencies = {
-      'MunifTanjim/nui.nvim',
-      'nvim-tree/nvim-web-devicons',
-      'nvim-lua/plenary.nvim',
-      "chrisgrieser/nvim-tinygit"
+      "MunifTanjim/nui.nvim",
+      "nvim-tree/nvim-web-devicons",
+      "nvim-lua/plenary.nvim",
+      {
+        "chrisgrieser/nvim-tinygit",
+        dependencies = { "stevearc/dressing.nvim" },
+      },
     },
-    cmd = { 'Fugit2', 'Fugit2Diff', 'Fugit2Graph' },
+    cmd = { "Fugit2", "Fugit2Diff", "Fugit2Graph" },
     keys = {
       {
-        '<leader>gs',
-        mode = 'n',
-        '<cmd>Fugit2<cr>',
+        "<leader>gs",
+        mode = "n",
+        "<cmd>Fugit2<cr>",
         desc = "Git Status",
       },
       {
@@ -27,6 +34,6 @@ return {
         "<cmd>Fugit2Graph<cr>",
         desc = "Git log",
       },
-    }
-  }
+    },
+  },
 }
