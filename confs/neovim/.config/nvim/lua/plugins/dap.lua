@@ -60,10 +60,10 @@ return {
       local dapui = require("dapui")
 
       -- setup dap config by VsCode launch.json file
-      -- require("dap.ext.vscode").load_launchjs(nil, {
-      --   debugpy = { 'python' },
-      --   ["pwa-node"] = { 'javascript' },
-      -- })
+      require("dap.ext.vscode").load_launchjs(nil, {
+        debugpy = { 'python' },
+        ["pwa-node"] = { 'javascript' },
+      })
 
       -- inherit the default configuration
       dapui.setup(opts)
