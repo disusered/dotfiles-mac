@@ -2,8 +2,10 @@
 tap 'homebrew/cask-versions'
 tap 'homebrew/cask-fonts'
 tap 'heroku/brew'
+tap 'mongodb/brew'
 
 # TUI
+brew 'coreutils'                  # GNU coreutils
 brew 'ag'                         # Search in file
 brew 'fd'                         # Simple and fast alternative to find
 brew 'ripgrep'                    # Another search in file
@@ -20,6 +22,7 @@ brew 'lua'                        # Lua
 # brew 'lua@5.1'                    # Lua 5.1 # FIXME: This is deprecated
 brew 'luajit'                     # LuaJIT
 brew 'luarocks'                   # Luarocks
+brew 'libgit2'                    # Git library
 brew 'gnupg'                      # GPG for signing commits
 brew 'gpgme'                      # GPGME for signing commits in Neovim
 brew 'pinentry-mac'               # Pinentry for GPG
@@ -76,6 +79,7 @@ cask 'mactex-no-gui'              # MacTeX without GUI
 brew 'xcode-build-server'         # Xcode Build Server
 brew 'xcbeautify'                 # Xcode Beautify
 brew 'ruby'                       # Ruby
+brew 'mongodb-database-tools'     # MongoDB tools
 
 #TODO
 #cask 'virtualbox'                 # Virtualbox
@@ -120,6 +124,7 @@ cask 'poedit'                         # l10n
 cask 'love'                           # LÖVE
 cask 'bfxr'                           # Sound effects
 mas 'Xcode', id: 497799835            # Xcode
+cask 'studio-3t'                      # MongoDB GUI
 
 # Fonts
 cask 'font-hasklig'
@@ -142,6 +147,7 @@ mas 'Parcel', id: 639968404                         # Shipment tracking
 mas 'Awesome Habits: Habit Tracker', id: 1514915737 # Habit tracker
 mas 'Telegram', id: 747648890                       # Telegram
 mas 'WhatsApp', id: 310633997                       # WhatsApp
+brew 'bazarr'                                       # Subtitle downloader
 
 # vscode plugins
 
