@@ -2,6 +2,7 @@ return {
   {
     "SuperBo/fugit2.nvim",
     opts = {
+      libgit2_path = "/opt/homebrew/lib/libgit2.dylib",
       rocks = {
         enabled = true,
         hererocks = true,
