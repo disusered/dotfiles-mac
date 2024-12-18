@@ -5,8 +5,8 @@ return {
       colorscheme = "catppuccin",
       -- load the default settings
       defaults = {
-        autocmds = false, -- lazyvim.config.autocmds
-        keymaps = false, -- lazyvim.config.keymaps
+        autocmds = true, -- lazyvim.config.autocmds
+        keymaps = true, -- lazyvim.config.keymaps
       },
     },
   },
