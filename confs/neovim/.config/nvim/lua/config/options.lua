@@ -55,6 +55,7 @@ vim.opt.splitbelow = false
 -- Enable language providers
 vim.g.loaded_python3_provider = 1
 vim.g.python3_host_prog = "/opt/homebrew/bin/python3"
+vim.g.ruby_host_prog = "/opt/homebrew/opt/ruby/bin/ruby"
 
 -- Disable providers that are not being used
 vim.g.loaded_node_provider = 0
@@ -77,6 +78,5 @@ vim.o.undodir = "~/.config/nvim/undos/"
 --                    - 'a'    -- don't autoformat the paragraphs (use some formatter instead)
 vim.o.formatoptions = "jncql"
 
-
 -- Set spelllang
-vim.opt.spelllang = { "en_us", "es", }
+vim.opt.spelllang = { "en_us", "es" }
