@@ -21,6 +21,7 @@ return {
         "jsonc",
         "gitcommit",
         "git_rebase",
+        "swift",
       })
     end,
   },

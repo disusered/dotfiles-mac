@@ -51,7 +51,8 @@ log "Installing Neovim plugin dependencies"
 
 # Install Neovim Python provider
 /opt/homebrew/bin/pip3 install pynvim --upgrade --user --break-system-packages
+/opt/homebrew/bin/python3 -m pip install --upgrade --user pynvim --break-system-packages
 
 # Install XCode Neovim tooling
-gem install xcodeproj
+sudo gem install xcodeproj
 /opt/homebrew/bin/pip3 install pymobiledevice3 --upgrade --user --break-system-packages
