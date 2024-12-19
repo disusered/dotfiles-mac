@@ -17,7 +17,6 @@ return {
   -- disable tokyonight
   { "folke/tokyonight.nvim", enabled = false },
   -- disable UI extras
-  { "stevearc/dressing.nvim", enabled = true },
   { "folke/noice.nvim", enabled = false },
   { "folke/edgy.nvim", enabled = false },
   -- no file explorer
