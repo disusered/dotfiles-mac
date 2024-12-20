@@ -59,7 +59,7 @@ vim.g.loaded_ruby_provider = 0
 
 -- Set undofile for persistent undo
 vim.o.undofile = true
-vim.o.undodir = "~/.config/nvim/undos/"
+vim.fs.normalize("~/.config/nvim/undos/")
 
 -- Set text formatting options
 --                    + 'j'    -- join comments smartly
