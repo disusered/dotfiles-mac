@@ -12,8 +12,6 @@ return {
   { "ahmedkhalf/project.nvim", enabled = false },
   -- don't use search/replace plugin
   { "MagicDuck/grug-far.nvim", enabled = false },
-  -- don't use mini.surround
-  { "echasnovski/mini.surround", enabled = false },
   -- disable tokyonight
   { "folke/tokyonight.nvim", enabled = false },
   -- disable UI extras
@@ -21,4 +19,6 @@ return {
   { "folke/edgy.nvim", enabled = false },
   -- no file explorer
   { "nvim-neo-tree/neo-tree.nvim", enabled = false },
+  -- no fzf-lua yet
+  { "ibhagwan/fzf-lua", enabled = false },
 }
