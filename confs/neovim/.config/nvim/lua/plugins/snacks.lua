@@ -1,12 +1,18 @@
--- This is the main reason I am considering quitting LazyVim, this fucking asshole
--- keeps adding his bullshit add-ons to my config, and I have to keep removing them
--- or modifying them and porting older configs. Fuck this asshole.
-
 return {
   "folke/snacks.nvim",
   opts = {
     dashboard = { enabled = false },
-    statuscolumn = { enabled = false },
+    indent = { -- replaced indent-blankline.nvim
+      enabled = true,
+      only_scope = true,
+    },
+    input = { enabled = true }, -- replaced dressing.nvim
+    notifier = { enabled = true }, -- replaced nvim-notify
+    scope = { enabled = true }, -- ii/ai objects for scope
+    scroll = { enabled = false }, -- no smooth scrolling
+    statuscolumn = { enabled = false }, -- we set this in options.lua
+    words = { enabled = true },
+    bigfile = { notify = true },
   },
   keys = {
     {

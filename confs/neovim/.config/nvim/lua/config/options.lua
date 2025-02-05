@@ -78,3 +78,6 @@ vim.opt.spelllang = { "en_us", "es" }
 
 -- Disable snacks animations
 vim.g.snacks_animate = false
+
+-- Set snacks options
+vim.opt.statuscolumn = [[%!v:lua.require'snacks.statuscolumn'.get()]]
