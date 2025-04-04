@@ -55,6 +55,7 @@ brew 'deno'                       # Deno
 brew 'amfora'                     # Gemini browser
 brew 'tree'                       # Tree view for directories
 brew 'heroku'                     # Heroku CLI
+cask 'google-cloud-sdk'           # Google Cloud SDK
 brew 'rustup'                     # Rust
 brew 'awscli'                     # AWS CLI
 brew 'mono'                       # Mono
@@ -80,11 +81,11 @@ brew 'xcode-build-server'         # Xcode Build Server
 brew 'xcbeautify'                 # Xcode Beautify
 brew 'ruby'                       # Ruby
 brew 'mongodb-database-tools'     # MongoDB tools
+brew 'terraform'                  # Terraform
 
 #TODO
 #cask 'virtualbox'                 # Virtualbox
 #brew 'vagrant'                    # Vagrant
-#brew 'terraform'                  # Terraform
 #brew 'pnpm'                       # PNPM
 
 # GUI

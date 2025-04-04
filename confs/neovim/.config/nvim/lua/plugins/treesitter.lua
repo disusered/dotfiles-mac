@@ -22,6 +22,7 @@ return {
         "gitcommit",
         "git_rebase",
         "swift",
+        "terraform",
       })
     end,
   },
