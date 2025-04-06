@@ -11,5 +11,16 @@ return {
       { "<leader>aq", "<cmd>CodeCompanion<cr>", desc = "Quick Chat (CodeCompanion)" },
       { "<leader>ap", "<cmd>CodeCompanionActions<cr>", desc = "Prompt Actions (CodeCompanion)" },
     },
+    opts = {
+      display = {
+        action_palette = {
+          provider = "telescope", -- default|telescope|mini_pick
+          opts = {
+            show_default_actions = true, -- Show the default actions in the action palette?
+            show_default_prompt_library = true, -- Show the default prompt library in the action palette?
+          },
+        },
+      },
+    },
   },
 }
