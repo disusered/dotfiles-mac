@@ -4,6 +4,8 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     /usr/local/opt/libpq/bin
     # Ruby
     /opt/homebrew/opt/ruby/bin
+    # Local Python
+    $HOME/Library/Python/3.13/bin/
     # Node version management
     $VOLTA_HOME/bin
     # Docker Desktop
