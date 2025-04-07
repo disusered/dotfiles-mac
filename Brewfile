@@ -74,6 +74,7 @@ brew 'xz'                         # XZ
 brew 'python3'                    # Python 3 (default)
 brew 'python@3.9'                 # Python 3.9
 brew 'python@3.11'                # Python 3.11
+brew 'uv'                         # UV package manager
 cask 'devpod'                     # DevPod (devcontainers)
 brew 'figlet'                     # Figlet
 cask 'mactex-no-gui'              # MacTeX without GUI
