@@ -48,3 +48,6 @@ export ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
 # Set flavor for Catppuccin theme i.e. latte, frappe, macchiato, mocha
 export CATPPUCCIN_FLAVOR="mocha"
+
+# Add secrets from .env file
+set -a; source $HOME/.env; set +a
