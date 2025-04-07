@@ -29,7 +29,7 @@ return {
       },
       strategies = {
         chat = {
-          adapter = "openai",
+          adapter = "copilot",
           tools = {
             ["mcp"] = {
               -- Prevent mcphub from loading before needed

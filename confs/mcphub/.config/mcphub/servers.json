@@ -1,31 +1,7 @@
 {
   "nativeMCPServers": [],
   "mcpServers": {
-    "dbutils": {
-      "args": [
-        "mcp-dbutils",
-        "--config",
-        "/Users/carlos/.config/db/config.yaml"
-      ],
-      "command": "uvx"
-    },
-    "time": {
-      "deps": [
-        "pytz",
-        "tzdata"
-      ],
-      "args": [
-        "mcp-server-time",
-        "--local-timezone",
-        "America/Tijuana"
-      ],
-      "command": "uvx"
-    },
     "github": {
-      "env": {
-        "GITHUB_PERSONAL_ACCESS_TOKEN": null
-      },
-      "disabled": false,
       "args": [
         "run",
         "-i",
@@ -34,7 +10,31 @@
         "GITHUB_PERSONAL_ACCESS_TOKEN",
         "ghcr.io/github/github-mcp-server"
       ],
-      "command": "docker"
+      "command": "docker",
+      "disabled": false,
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": null
+      }
+    },
+    "dbutils": {
+      "command": "uvx",
+      "args": [
+        "mcp-dbutils",
+        "--config",
+        "/Users/carlos/.config/db/config.yaml"
+      ]
+    },
+    "time": {
+      "command": "uvx",
+      "deps": [
+        "pytz",
+        "tzdata"
+      ],
+      "args": [
+        "mcp-server-time",
+        "--local-timezone",
+        "America/Tijuana"
+      ]
     }
   }
 }
