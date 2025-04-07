@@ -1,9 +1,20 @@
 #!/bin/bash
 
+TIMEZONE="America/Tijuana"
+
 # Logging function
 log() {
   echo -e "\033[1;32m[+]\033[0m $1"
 }
+
+# Set timezone to America/Tijuana if not already set
+CURRENT_TZ=$(sudo systemsetup -gettimezone | awk '{print $3}')
+if [ "$CURRENT_TZ" != $TIMEZONE ]; then
+  log "Setting timezone to $TIMEZONE"
+  sudo systemsetup -settimezone "$TIMEZONE"
+else
+  log "Timezone is already set to $TIMEZONE"
+fi
 
 # Install Homebrew
 if ! command -v brew &>/dev/null; then
