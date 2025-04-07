@@ -11,6 +11,14 @@
         "--local-timezone",
         "America/Tijuana"
       ]
+    },
+    "dbutils": {
+      "command": "uvx",
+      "args": [
+        "mcp-dbutils",
+        "--config",
+        "/Users/carlos/.config/db/config.yaml"
+      ]
     }
   }
 }
