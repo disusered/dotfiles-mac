@@ -112,7 +112,8 @@ cask 'vlc'                                  # Media player
 cask 'skim'                                 # Skim PDF reader
 cask 'inkscape'                             # Inkscape
 cask 'airfoil'                              # Airfoil
-cask 'keycastr'                   # Keycastr
+cask 'keycastr'                             # Keycastr
+cask 'shortcat'                             # Shortcat
 
 # Development
 cask 'iterm2'                         # Terminal
