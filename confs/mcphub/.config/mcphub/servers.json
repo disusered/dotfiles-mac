@@ -16,6 +16,13 @@
         "GITHUB_PERSONAL_ACCESS_TOKEN": null
       }
     },
+    "json": {
+      "command": "npx",
+      "disabled": false,
+      "args": [
+        "@gongrzhe/server-json-mcp@1.0.3"
+      ]
+    },
     "dbutils": {
       "command": "uvx",
       "args": [
