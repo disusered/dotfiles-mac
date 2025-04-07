@@ -82,6 +82,8 @@ brew 'xcbeautify'                 # Xcode Beautify
 brew 'ruby'                       # Ruby
 brew 'mongodb-database-tools'     # MongoDB tools
 brew 'terraform'                  # Terraform
+brew 'aider'                      # AI in terminal
+brew 'terminal-notifier'          # Notifications in terminal
 
 #TODO
 #cask 'virtualbox'                 # Virtualbox

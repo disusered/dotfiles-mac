@@ -48,3 +48,8 @@ alias colors='( x=`tput op` y=`printf %$((${COLUMNS}-6))s`;for i in {0..256};do 
 # Docker
 alias docker_clean_images='docker rmi $(docker images -a --filter=dangling=true -q)'
 alias docker_clean_ps='docker rm $(docker ps --filter=status=exited --filter=status=created -q)'
+
+# Aider (AI assistant)
+alias ai='aider --api-key openai=`op read op://Prescrypto/OpenAI\ Token/key`'
+alias coder='aider --api-key openai=`op read op://Prescrypto/OpenAI\ Token/key`'
+alias reason='aider --api-key openai=`op read op://Prescrypto/OpenAI\ Token/key` --model o3-mini --reasoning-effort high'

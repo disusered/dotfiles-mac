@@ -9,3 +9,5 @@ swatch*
 *.pgsql
 .neoconf.json
 pr
+.aider*
+!confs/aider/.aider.conf.yml
