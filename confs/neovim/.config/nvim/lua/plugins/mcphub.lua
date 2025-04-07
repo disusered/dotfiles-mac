@@ -7,6 +7,7 @@ return {
     cmd = "MCPHub", -- lazy load by default
     build = "bundled_build.lua", -- Use the bundled build script rather than a global npm install
     use_bundled_binary = true,
+    auto_approve = true, -- Automatically approve the call of the MCP server
     opts = {
       extensions = {
         codecompanion = {
