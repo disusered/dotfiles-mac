@@ -2,6 +2,11 @@
   "nativeMCPServers": [],
   "mcpServers": {
     "github": {
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": null
+      },
+      "disabled": false,
+      "command": "docker",
       "args": [
         "run",
         "-i",
@@ -9,16 +14,17 @@
         "-e",
         "GITHUB_PERSONAL_ACCESS_TOKEN",
         "ghcr.io/github/github-mcp-server"
-      ],
-      "command": "docker",
-      "disabled": false,
-      "env": {
-        "GITHUB_PERSONAL_ACCESS_TOKEN": null
-      }
+      ]
+    },
+    "docker": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-docker"
+      ]
     },
     "json": {
-      "command": "npx",
       "disabled": false,
+      "command": "npx",
       "args": [
         "@gongrzhe/server-json-mcp@1.0.3"
       ]
@@ -31,22 +37,40 @@
         "/Users/carlos/.config/db/config.yaml"
       ]
     },
-    "time": {
+    "jira": {
+      "disabled_tools": [
+        "confluence_attach_content",
+        "confluence_create_page",
+        "confluence_delete_page",
+        "confluence_get_comments",
+        "confluence_get_page",
+        "confluence_get_page_ancestors",
+        "confluence_get_page_children",
+        "confluence_search",
+        "confluence_update_page"
+      ],
       "command": "uvx",
+      "env": {
+        "JIRA_API_TOKEN": null
+      },
+      "args": [
+        "mcp-atlassian",
+        "--jira-url=https://prescrypto.atlassian.net",
+        "--jira-username=crosquillas@gmail.com",
+        "--jira-token=JIRA_API_TOKEN",
+        "--jira-projects-filter=RXTEAM"
+      ]
+    },
+    "time": {
       "deps": [
         "pytz",
         "tzdata"
       ],
+      "command": "uvx",
       "args": [
         "mcp-server-time",
         "--local-timezone",
         "America/Tijuana"
-      ]
-    },
-    "docker": {
-      "command": "uvx",
-      "args": [
-        "mcp-server-docker"
       ]
     }
   }
