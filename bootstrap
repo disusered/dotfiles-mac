@@ -34,7 +34,7 @@ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
 # Configure symlinks to configs
 log "Symlinking dotfiles with Stow"
-stow -d $HOME/.dotfiles/confs -t $HOME -R git neovim tmux zsh bat btop ncdu lazygit amfora ssh gnupg aider pip
+stow -d $HOME/.dotfiles/confs -t $HOME -R git neovim tmux zsh bat btop ncdu lazygit amfora ssh gnupg aider pip mcphub
 
 # Create authorized keys file
 touch ~/.ssh/authorized_keys

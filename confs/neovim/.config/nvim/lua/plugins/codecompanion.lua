@@ -5,6 +5,7 @@ return {
     dependencies = {
       "nvim-lua/plenary.nvim",
       "nvim-treesitter/nvim-treesitter",
+      "ravitemer/mcphub.nvim",
     },
     keys = {
       { "<leader>aa", "<cmd>CodeCompanionChat Toggle<cr>", desc = "Toggle Chat (CodeCompanion)" },
@@ -29,6 +30,15 @@ return {
       strategies = {
         chat = {
           adapter = "openai",
+          tools = {
+            ["mcp"] = {
+              -- Prevent mcphub from loading before needed
+              callback = function()
+                return require("mcphub.extensions.codecompanion")
+              end,
+              description = "Call tools and resources from the MCP Servers",
+            },
+          },
           slash_commands = {
             ["buffer"] = {
               opts = {
